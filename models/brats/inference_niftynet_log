@@ -1,0 +1,1077 @@
+INFO:niftynet:2019-02-11 14:21:09,975: set CUDA_VISIBLE_DEVICES to 0
+INFO:niftynet:2019-02-11 14:21:09,976: set initial_iter to 12 based on checkpoints
+INFO:niftynet:2019-02-11 14:21:09,977: starting segmentation application
+INFO:niftynet:2019-02-11 14:21:09,977: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-11 14:21:09,982: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-11 14:21:09,986: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+WARNING:niftynet:2019-02-11 14:21:09,990: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-11 14:21:09,992: 
+
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T2', 'label']
+Dataset partitioning:
+-- training 227 cases (79.65%),
+-- validation 29 cases (10.18%),
+-- inference 29 cases (10.18%).
+
+INFO:niftynet:2019-02-11 14:21:11,548: Image reader: loading 29 subjects from sections ('T1', 'T2') as input [image]
+INFO:niftynet:2019-02-11 14:21:11,549: normalisation histogram reference models ready for image:('T1', 'T2')
+INFO:niftynet:2019-02-11 14:21:11,549: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-11 14:21:12,984: initialised window instance
+INFO:niftynet:2019-02-11 14:21:12,984: initialised grid sampler {'image': (1, 120, 120, 80, 1, 2), 'image_location': (1, 7)}
+WARNING:niftynet:2019-02-11 14:21:13,077: From /home/sathiesh/niftynet_brain/NiftyNet/niftynet/engine/application_initializer.py:106: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+INFO:niftynet:2019-02-11 14:21:13,078: using DenseVNet
+INFO:niftynet:2019-02-11 14:21:13,080: Initialising dataset from generator...
+INFO:niftynet:2019-02-11 14:21:15,718: Restoring parameters from /home/sathiesh/niftynet_brain/models/brats/models/model.ckpt-12
+INFO:niftynet:2019-02-11 14:21:18,825: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:18,825: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:18,825: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:20,326: inference iter 0,  (4.219403s)
+INFO:niftynet:2019-02-11 14:21:20,380: inference iter 1,  (0.050832s)
+INFO:niftynet:2019-02-11 14:21:20,433: inference iter 2,  (0.050261s)
+INFO:niftynet:2019-02-11 14:21:20,485: inference iter 3,  (0.049635s)
+INFO:niftynet:2019-02-11 14:21:20,541: inference iter 4,  (0.051553s)
+INFO:niftynet:2019-02-11 14:21:20,594: inference iter 5,  (0.048687s)
+INFO:niftynet:2019-02-11 14:21:20,646: inference iter 6,  (0.048827s)
+INFO:niftynet:2019-02-11 14:21:20,697: inference iter 7,  (0.049284s)
+INFO:niftynet:2019-02-11 14:21:20,749: inference iter 8,  (0.049264s)
+INFO:niftynet:2019-02-11 14:21:20,801: inference iter 9,  (0.049047s)
+INFO:niftynet:2019-02-11 14:21:20,852: inference iter 10,  (0.049024s)
+INFO:niftynet:2019-02-11 14:21:20,906: inference iter 11,  (0.049685s)
+INFO:niftynet:2019-02-11 14:21:20,961: inference iter 12,  (0.051487s)
+INFO:niftynet:2019-02-11 14:21:21,016: inference iter 13,  (0.051392s)
+INFO:niftynet:2019-02-11 14:21:21,378: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:21,378: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:21,378: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:21,749: inference iter 14,  (0.430905s)
+INFO:niftynet:2019-02-11 14:21:21,801: inference iter 15,  (0.049161s)
+INFO:niftynet:2019-02-11 14:21:21,853: inference iter 16,  (0.048811s)
+INFO:niftynet:2019-02-11 14:21:21,905: inference iter 17,  (0.049161s)
+INFO:niftynet:2019-02-11 14:21:21,958: inference iter 18,  (0.050478s)
+INFO:niftynet:2019-02-11 14:21:22,011: inference iter 19,  (0.050328s)
+INFO:niftynet:2019-02-11 14:21:22,062: inference iter 20,  (0.048430s)
+INFO:niftynet:2019-02-11 14:21:22,113: inference iter 21,  (0.048678s)
+INFO:niftynet:2019-02-11 14:21:22,165: inference iter 22,  (0.048773s)
+INFO:niftynet:2019-02-11 14:21:22,217: inference iter 23,  (0.049621s)
+INFO:niftynet:2019-02-11 14:21:22,269: inference iter 24,  (0.048948s)
+INFO:niftynet:2019-02-11 14:21:22,321: inference iter 25,  (0.049084s)
+INFO:niftynet:2019-02-11 14:21:22,376: inference iter 26,  (0.050950s)
+INFO:niftynet:2019-02-11 14:21:22,432: inference iter 27,  (0.051420s)
+INFO:niftynet:2019-02-11 14:21:24,022: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:24,022: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:24,022: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:24,365: inference iter 28,  (1.652738s)
+INFO:niftynet:2019-02-11 14:21:24,417: inference iter 29,  (0.048635s)
+INFO:niftynet:2019-02-11 14:21:24,470: inference iter 30,  (0.050287s)
+INFO:niftynet:2019-02-11 14:21:24,522: inference iter 31,  (0.049336s)
+INFO:niftynet:2019-02-11 14:21:24,574: inference iter 32,  (0.049299s)
+INFO:niftynet:2019-02-11 14:21:24,625: inference iter 33,  (0.048397s)
+INFO:niftynet:2019-02-11 14:21:24,676: inference iter 34,  (0.048530s)
+INFO:niftynet:2019-02-11 14:21:24,728: inference iter 35,  (0.049035s)
+INFO:niftynet:2019-02-11 14:21:24,779: inference iter 36,  (0.048576s)
+INFO:niftynet:2019-02-11 14:21:24,830: inference iter 37,  (0.048886s)
+INFO:niftynet:2019-02-11 14:21:24,883: inference iter 38,  (0.048974s)
+INFO:niftynet:2019-02-11 14:21:24,940: inference iter 39,  (0.054571s)
+INFO:niftynet:2019-02-11 14:21:24,993: inference iter 40,  (0.049021s)
+INFO:niftynet:2019-02-11 14:21:25,047: inference iter 41,  (0.050983s)
+INFO:niftynet:2019-02-11 14:21:26,678: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:26,678: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:26,678: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:27,038: inference iter 42,  (1.696408s)
+INFO:niftynet:2019-02-11 14:21:27,091: inference iter 43,  (0.049670s)
+INFO:niftynet:2019-02-11 14:21:27,143: inference iter 44,  (0.048982s)
+INFO:niftynet:2019-02-11 14:21:27,195: inference iter 45,  (0.049376s)
+INFO:niftynet:2019-02-11 14:21:27,246: inference iter 46,  (0.049033s)
+INFO:niftynet:2019-02-11 14:21:27,297: inference iter 47,  (0.048723s)
+INFO:niftynet:2019-02-11 14:21:27,350: inference iter 48,  (0.048627s)
+INFO:niftynet:2019-02-11 14:21:27,401: inference iter 49,  (0.048726s)
+INFO:niftynet:2019-02-11 14:21:27,453: inference iter 50,  (0.048723s)
+INFO:niftynet:2019-02-11 14:21:27,505: inference iter 51,  (0.048821s)
+INFO:niftynet:2019-02-11 14:21:27,560: inference iter 52,  (0.050550s)
+INFO:niftynet:2019-02-11 14:21:27,613: inference iter 53,  (0.050449s)
+INFO:niftynet:2019-02-11 14:21:27,684: inference iter 54,  (0.051237s)
+INFO:niftynet:2019-02-11 14:21:27,738: inference iter 55,  (0.051099s)
+INFO:niftynet:2019-02-11 14:21:29,355: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:29,355: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:29,355: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:29,735: inference iter 56,  (1.682079s)
+INFO:niftynet:2019-02-11 14:21:29,788: inference iter 57,  (0.049880s)
+INFO:niftynet:2019-02-11 14:21:29,841: inference iter 58,  (0.049702s)
+INFO:niftynet:2019-02-11 14:21:29,893: inference iter 59,  (0.049596s)
+INFO:niftynet:2019-02-11 14:21:29,947: inference iter 60,  (0.050953s)
+INFO:niftynet:2019-02-11 14:21:29,999: inference iter 61,  (0.049650s)
+INFO:niftynet:2019-02-11 14:21:30,052: inference iter 62,  (0.050129s)
+INFO:niftynet:2019-02-11 14:21:30,106: inference iter 63,  (0.051082s)
+INFO:niftynet:2019-02-11 14:21:30,157: inference iter 64,  (0.048580s)
+INFO:niftynet:2019-02-11 14:21:30,210: inference iter 65,  (0.050432s)
+INFO:niftynet:2019-02-11 14:21:30,262: inference iter 66,  (0.048979s)
+INFO:niftynet:2019-02-11 14:21:30,315: inference iter 67,  (0.050246s)
+INFO:niftynet:2019-02-11 14:21:30,368: inference iter 68,  (0.049930s)
+INFO:niftynet:2019-02-11 14:21:30,419: inference iter 69,  (0.048595s)
+INFO:niftynet:2019-02-11 14:21:32,006: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:32,006: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:32,008: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:32,412: inference iter 70,  (1.674915s)
+INFO:niftynet:2019-02-11 14:21:32,464: inference iter 71,  (0.049231s)
+INFO:niftynet:2019-02-11 14:21:32,516: inference iter 72,  (0.049075s)
+INFO:niftynet:2019-02-11 14:21:32,568: inference iter 73,  (0.049326s)
+INFO:niftynet:2019-02-11 14:21:32,621: inference iter 74,  (0.050276s)
+INFO:niftynet:2019-02-11 14:21:32,672: inference iter 75,  (0.048822s)
+INFO:niftynet:2019-02-11 14:21:32,724: inference iter 76,  (0.048804s)
+INFO:niftynet:2019-02-11 14:21:32,775: inference iter 77,  (0.048481s)
+INFO:niftynet:2019-02-11 14:21:32,831: inference iter 78,  (0.051594s)
+INFO:niftynet:2019-02-11 14:21:32,884: inference iter 79,  (0.050275s)
+INFO:niftynet:2019-02-11 14:21:32,939: inference iter 80,  (0.051571s)
+INFO:niftynet:2019-02-11 14:21:32,992: inference iter 81,  (0.049659s)
+INFO:niftynet:2019-02-11 14:21:33,045: inference iter 82,  (0.049472s)
+INFO:niftynet:2019-02-11 14:21:33,101: inference iter 83,  (0.051804s)
+INFO:niftynet:2019-02-11 14:21:34,629: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:34,629: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:34,629: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:35,004: inference iter 84,  (1.593224s)
+INFO:niftynet:2019-02-11 14:21:35,057: inference iter 85,  (0.049848s)
+INFO:niftynet:2019-02-11 14:21:35,109: inference iter 86,  (0.049312s)
+INFO:niftynet:2019-02-11 14:21:35,162: inference iter 87,  (0.050540s)
+INFO:niftynet:2019-02-11 14:21:35,214: inference iter 88,  (0.049315s)
+INFO:niftynet:2019-02-11 14:21:35,264: inference iter 89,  (0.048475s)
+INFO:niftynet:2019-02-11 14:21:35,316: inference iter 90,  (0.048749s)
+INFO:niftynet:2019-02-11 14:21:35,367: inference iter 91,  (0.048626s)
+INFO:niftynet:2019-02-11 14:21:35,420: inference iter 92,  (0.049399s)
+INFO:niftynet:2019-02-11 14:21:35,475: inference iter 93,  (0.051025s)
+INFO:niftynet:2019-02-11 14:21:35,531: inference iter 94,  (0.051831s)
+INFO:niftynet:2019-02-11 14:21:35,585: inference iter 95,  (0.051826s)
+INFO:niftynet:2019-02-11 14:21:35,637: inference iter 96,  (0.049141s)
+INFO:niftynet:2019-02-11 14:21:35,691: inference iter 97,  (0.051852s)
+INFO:niftynet:2019-02-11 14:21:37,222: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:37,222: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:37,222: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:37,595: inference iter 98,  (1.595692s)
+INFO:niftynet:2019-02-11 14:21:37,647: inference iter 99,  (0.048886s)
+INFO:niftynet:2019-02-11 14:21:37,698: inference iter 100,  (0.048786s)
+INFO:niftynet:2019-02-11 14:21:37,751: inference iter 101,  (0.050681s)
+INFO:niftynet:2019-02-11 14:21:37,804: inference iter 102,  (0.050468s)
+INFO:niftynet:2019-02-11 14:21:37,856: inference iter 103,  (0.048805s)
+INFO:niftynet:2019-02-11 14:21:37,908: inference iter 104,  (0.050485s)
+INFO:niftynet:2019-02-11 14:21:37,961: inference iter 105,  (0.048864s)
+INFO:niftynet:2019-02-11 14:21:38,015: inference iter 106,  (0.051005s)
+INFO:niftynet:2019-02-11 14:21:38,069: inference iter 107,  (0.049848s)
+INFO:niftynet:2019-02-11 14:21:38,125: inference iter 108,  (0.051757s)
+INFO:niftynet:2019-02-11 14:21:38,180: inference iter 109,  (0.052094s)
+INFO:niftynet:2019-02-11 14:21:38,236: inference iter 110,  (0.052034s)
+INFO:niftynet:2019-02-11 14:21:38,290: inference iter 111,  (0.051632s)
+INFO:niftynet:2019-02-11 14:21:39,794: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:39,794: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:39,794: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:40,175: inference iter 112,  (1.566667s)
+INFO:niftynet:2019-02-11 14:21:40,226: inference iter 113,  (0.049033s)
+INFO:niftynet:2019-02-11 14:21:40,278: inference iter 114,  (0.048831s)
+INFO:niftynet:2019-02-11 14:21:40,331: inference iter 115,  (0.050635s)
+INFO:niftynet:2019-02-11 14:21:40,385: inference iter 116,  (0.050599s)
+INFO:niftynet:2019-02-11 14:21:40,436: inference iter 117,  (0.048658s)
+INFO:niftynet:2019-02-11 14:21:40,487: inference iter 118,  (0.048338s)
+INFO:niftynet:2019-02-11 14:21:40,539: inference iter 119,  (0.048854s)
+INFO:niftynet:2019-02-11 14:21:40,591: inference iter 120,  (0.049404s)
+INFO:niftynet:2019-02-11 14:21:40,643: inference iter 121,  (0.049223s)
+INFO:niftynet:2019-02-11 14:21:40,697: inference iter 122,  (0.049618s)
+INFO:niftynet:2019-02-11 14:21:40,749: inference iter 123,  (0.049617s)
+INFO:niftynet:2019-02-11 14:21:40,801: inference iter 124,  (0.049399s)
+INFO:niftynet:2019-02-11 14:21:40,853: inference iter 125,  (0.049263s)
+INFO:niftynet:2019-02-11 14:21:42,434: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:42,435: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:42,436: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:42,807: inference iter 126,  (1.651628s)
+INFO:niftynet:2019-02-11 14:21:42,860: inference iter 127,  (0.049975s)
+INFO:niftynet:2019-02-11 14:21:42,915: inference iter 128,  (0.051934s)
+INFO:niftynet:2019-02-11 14:21:42,967: inference iter 129,  (0.049394s)
+INFO:niftynet:2019-02-11 14:21:43,021: inference iter 130,  (0.051077s)
+INFO:niftynet:2019-02-11 14:21:43,072: inference iter 131,  (0.048548s)
+INFO:niftynet:2019-02-11 14:21:43,123: inference iter 132,  (0.048712s)
+INFO:niftynet:2019-02-11 14:21:43,175: inference iter 133,  (0.049221s)
+INFO:niftynet:2019-02-11 14:21:43,228: inference iter 134,  (0.049228s)
+INFO:niftynet:2019-02-11 14:21:43,282: inference iter 135,  (0.050716s)
+INFO:niftynet:2019-02-11 14:21:43,336: inference iter 136,  (0.050557s)
+INFO:niftynet:2019-02-11 14:21:43,389: inference iter 137,  (0.049051s)
+INFO:niftynet:2019-02-11 14:21:43,443: inference iter 138,  (0.050818s)
+INFO:niftynet:2019-02-11 14:21:43,497: inference iter 139,  (0.050130s)
+INFO:niftynet:2019-02-11 14:21:45,221: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:45,222: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:45,222: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:45,616: inference iter 140,  (1.793561s)
+INFO:niftynet:2019-02-11 14:21:45,668: inference iter 141,  (0.049223s)
+INFO:niftynet:2019-02-11 14:21:45,720: inference iter 142,  (0.049775s)
+INFO:niftynet:2019-02-11 14:21:45,771: inference iter 143,  (0.048779s)
+INFO:niftynet:2019-02-11 14:21:45,823: inference iter 144,  (0.048836s)
+INFO:niftynet:2019-02-11 14:21:45,874: inference iter 145,  (0.048589s)
+INFO:niftynet:2019-02-11 14:21:45,925: inference iter 146,  (0.048631s)
+INFO:niftynet:2019-02-11 14:21:45,979: inference iter 147,  (0.050363s)
+INFO:niftynet:2019-02-11 14:21:46,033: inference iter 148,  (0.050821s)
+INFO:niftynet:2019-02-11 14:21:46,085: inference iter 149,  (0.049982s)
+INFO:niftynet:2019-02-11 14:21:46,139: inference iter 150,  (0.049350s)
+INFO:niftynet:2019-02-11 14:21:46,193: inference iter 151,  (0.050794s)
+INFO:niftynet:2019-02-11 14:21:46,248: inference iter 152,  (0.051608s)
+INFO:niftynet:2019-02-11 14:21:46,308: inference iter 153,  (0.055751s)
+INFO:niftynet:2019-02-11 14:21:47,987: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:47,987: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:47,987: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:48,405: inference iter 154,  (1.743387s)
+INFO:niftynet:2019-02-11 14:21:48,460: inference iter 155,  (0.049281s)
+INFO:niftynet:2019-02-11 14:21:48,511: inference iter 156,  (0.048810s)
+INFO:niftynet:2019-02-11 14:21:48,567: inference iter 157,  (0.052018s)
+INFO:niftynet:2019-02-11 14:21:48,619: inference iter 158,  (0.049764s)
+INFO:niftynet:2019-02-11 14:21:48,672: inference iter 159,  (0.050125s)
+INFO:niftynet:2019-02-11 14:21:48,724: inference iter 160,  (0.049531s)
+INFO:niftynet:2019-02-11 14:21:48,780: inference iter 161,  (0.052395s)
+INFO:niftynet:2019-02-11 14:21:48,831: inference iter 162,  (0.048521s)
+INFO:niftynet:2019-02-11 14:21:48,883: inference iter 163,  (0.048628s)
+INFO:niftynet:2019-02-11 14:21:48,935: inference iter 164,  (0.049447s)
+INFO:niftynet:2019-02-11 14:21:48,986: inference iter 165,  (0.048682s)
+INFO:niftynet:2019-02-11 14:21:49,040: inference iter 166,  (0.050691s)
+INFO:niftynet:2019-02-11 14:21:49,095: inference iter 167,  (0.050744s)
+INFO:niftynet:2019-02-11 14:21:50,683: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:50,683: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:50,683: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:51,050: inference iter 168,  (1.662362s)
+INFO:niftynet:2019-02-11 14:21:51,102: inference iter 169,  (0.049404s)
+INFO:niftynet:2019-02-11 14:21:51,154: inference iter 170,  (0.049113s)
+INFO:niftynet:2019-02-11 14:21:51,206: inference iter 171,  (0.049164s)
+INFO:niftynet:2019-02-11 14:21:51,258: inference iter 172,  (0.049069s)
+INFO:niftynet:2019-02-11 14:21:51,310: inference iter 173,  (0.048796s)
+INFO:niftynet:2019-02-11 14:21:51,360: inference iter 174,  (0.048758s)
+INFO:niftynet:2019-02-11 14:21:51,412: inference iter 175,  (0.049434s)
+INFO:niftynet:2019-02-11 14:21:51,464: inference iter 176,  (0.049579s)
+INFO:niftynet:2019-02-11 14:21:51,516: inference iter 177,  (0.049215s)
+INFO:niftynet:2019-02-11 14:21:51,571: inference iter 178,  (0.051313s)
+INFO:niftynet:2019-02-11 14:21:51,624: inference iter 179,  (0.050594s)
+INFO:niftynet:2019-02-11 14:21:51,679: inference iter 180,  (0.051346s)
+INFO:niftynet:2019-02-11 14:21:51,732: inference iter 181,  (0.049898s)
+INFO:niftynet:2019-02-11 14:21:53,266: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:53,266: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:53,266: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:53,683: inference iter 182,  (1.605260s)
+INFO:niftynet:2019-02-11 14:21:53,735: inference iter 183,  (0.049282s)
+INFO:niftynet:2019-02-11 14:21:53,788: inference iter 184,  (0.049276s)
+INFO:niftynet:2019-02-11 14:21:53,841: inference iter 185,  (0.050753s)
+INFO:niftynet:2019-02-11 14:21:53,895: inference iter 186,  (0.050152s)
+INFO:niftynet:2019-02-11 14:21:53,946: inference iter 187,  (0.048670s)
+INFO:niftynet:2019-02-11 14:21:54,005: inference iter 188,  (0.048693s)
+INFO:niftynet:2019-02-11 14:21:54,056: inference iter 189,  (0.048815s)
+INFO:niftynet:2019-02-11 14:21:54,107: inference iter 190,  (0.048595s)
+INFO:niftynet:2019-02-11 14:21:54,159: inference iter 191,  (0.049240s)
+INFO:niftynet:2019-02-11 14:21:54,213: inference iter 192,  (0.050524s)
+INFO:niftynet:2019-02-11 14:21:54,276: inference iter 193,  (0.058354s)
+INFO:niftynet:2019-02-11 14:21:54,330: inference iter 194,  (0.050843s)
+INFO:niftynet:2019-02-11 14:21:54,384: inference iter 195,  (0.049475s)
+INFO:niftynet:2019-02-11 14:21:56,047: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:56,047: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:56,047: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:56,397: inference iter 196,  (1.736399s)
+INFO:niftynet:2019-02-11 14:21:56,451: inference iter 197,  (0.051254s)
+INFO:niftynet:2019-02-11 14:21:56,502: inference iter 198,  (0.048673s)
+INFO:niftynet:2019-02-11 14:21:56,559: inference iter 199,  (0.048859s)
+INFO:niftynet:2019-02-11 14:21:56,614: inference iter 200,  (0.051803s)
+INFO:niftynet:2019-02-11 14:21:56,666: inference iter 201,  (0.048748s)
+INFO:niftynet:2019-02-11 14:21:56,720: inference iter 202,  (0.050230s)
+INFO:niftynet:2019-02-11 14:21:56,774: inference iter 203,  (0.050702s)
+INFO:niftynet:2019-02-11 14:21:56,828: inference iter 204,  (0.050610s)
+INFO:niftynet:2019-02-11 14:21:56,881: inference iter 205,  (0.049654s)
+INFO:niftynet:2019-02-11 14:21:56,936: inference iter 206,  (0.050817s)
+INFO:niftynet:2019-02-11 14:21:56,991: inference iter 207,  (0.051469s)
+INFO:niftynet:2019-02-11 14:21:57,062: inference iter 208,  (0.067264s)
+INFO:niftynet:2019-02-11 14:21:57,119: inference iter 209,  (0.052807s)
+INFO:niftynet:2019-02-11 14:21:58,832: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:58,832: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:21:58,832: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:21:59,229: inference iter 210,  (1.789946s)
+INFO:niftynet:2019-02-11 14:21:59,281: inference iter 211,  (0.048990s)
+INFO:niftynet:2019-02-11 14:21:59,337: inference iter 212,  (0.052983s)
+INFO:niftynet:2019-02-11 14:21:59,390: inference iter 213,  (0.049591s)
+INFO:niftynet:2019-02-11 14:21:59,444: inference iter 214,  (0.051423s)
+INFO:niftynet:2019-02-11 14:21:59,497: inference iter 215,  (0.048860s)
+INFO:niftynet:2019-02-11 14:21:59,553: inference iter 216,  (0.052965s)
+INFO:niftynet:2019-02-11 14:21:59,606: inference iter 217,  (0.049933s)
+INFO:niftynet:2019-02-11 14:21:59,658: inference iter 218,  (0.049076s)
+INFO:niftynet:2019-02-11 14:21:59,709: inference iter 219,  (0.049001s)
+INFO:niftynet:2019-02-11 14:21:59,763: inference iter 220,  (0.050546s)
+INFO:niftynet:2019-02-11 14:21:59,822: inference iter 221,  (0.055288s)
+INFO:niftynet:2019-02-11 14:21:59,877: inference iter 222,  (0.051175s)
+INFO:niftynet:2019-02-11 14:21:59,933: inference iter 223,  (0.051922s)
+INFO:niftynet:2019-02-11 14:22:01,501: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:01,501: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:01,505: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:01,909: inference iter 224,  (1.636664s)
+INFO:niftynet:2019-02-11 14:22:01,963: inference iter 225,  (0.050073s)
+INFO:niftynet:2019-02-11 14:22:02,024: inference iter 226,  (0.057524s)
+INFO:niftynet:2019-02-11 14:22:02,078: inference iter 227,  (0.050727s)
+INFO:niftynet:2019-02-11 14:22:02,132: inference iter 228,  (0.050413s)
+INFO:niftynet:2019-02-11 14:22:02,185: inference iter 229,  (0.049492s)
+INFO:niftynet:2019-02-11 14:22:02,237: inference iter 230,  (0.049273s)
+INFO:niftynet:2019-02-11 14:22:02,290: inference iter 231,  (0.049036s)
+INFO:niftynet:2019-02-11 14:22:02,341: inference iter 232,  (0.048961s)
+INFO:niftynet:2019-02-11 14:22:02,393: inference iter 233,  (0.049089s)
+INFO:niftynet:2019-02-11 14:22:02,446: inference iter 234,  (0.049095s)
+INFO:niftynet:2019-02-11 14:22:02,500: inference iter 235,  (0.050364s)
+INFO:niftynet:2019-02-11 14:22:02,554: inference iter 236,  (0.050048s)
+INFO:niftynet:2019-02-11 14:22:02,609: inference iter 237,  (0.051082s)
+INFO:niftynet:2019-02-11 14:22:04,184: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:04,185: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:04,185: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:04,543: inference iter 238,  (1.637766s)
+INFO:niftynet:2019-02-11 14:22:04,595: inference iter 239,  (0.048691s)
+INFO:niftynet:2019-02-11 14:22:04,647: inference iter 240,  (0.049296s)
+INFO:niftynet:2019-02-11 14:22:04,703: inference iter 241,  (0.052065s)
+INFO:niftynet:2019-02-11 14:22:04,756: inference iter 242,  (0.050442s)
+INFO:niftynet:2019-02-11 14:22:04,807: inference iter 243,  (0.048708s)
+INFO:niftynet:2019-02-11 14:22:04,858: inference iter 244,  (0.048545s)
+INFO:niftynet:2019-02-11 14:22:04,911: inference iter 245,  (0.049200s)
+INFO:niftynet:2019-02-11 14:22:04,964: inference iter 246,  (0.049800s)
+INFO:niftynet:2019-02-11 14:22:05,020: inference iter 247,  (0.051845s)
+INFO:niftynet:2019-02-11 14:22:05,075: inference iter 248,  (0.051476s)
+INFO:niftynet:2019-02-11 14:22:05,129: inference iter 249,  (0.050772s)
+INFO:niftynet:2019-02-11 14:22:05,181: inference iter 250,  (0.049487s)
+INFO:niftynet:2019-02-11 14:22:05,235: inference iter 251,  (0.051135s)
+INFO:niftynet:2019-02-11 14:22:06,899: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:06,900: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:06,900: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:07,261: inference iter 252,  (1.726945s)
+INFO:niftynet:2019-02-11 14:22:07,316: inference iter 253,  (0.049760s)
+INFO:niftynet:2019-02-11 14:22:07,376: inference iter 254,  (0.058414s)
+INFO:niftynet:2019-02-11 14:22:07,429: inference iter 255,  (0.050517s)
+INFO:niftynet:2019-02-11 14:22:07,483: inference iter 256,  (0.050597s)
+INFO:niftynet:2019-02-11 14:22:07,536: inference iter 257,  (0.048959s)
+INFO:niftynet:2019-02-11 14:22:07,588: inference iter 258,  (0.048976s)
+INFO:niftynet:2019-02-11 14:22:07,639: inference iter 259,  (0.048605s)
+INFO:niftynet:2019-02-11 14:22:07,693: inference iter 260,  (0.050428s)
+INFO:niftynet:2019-02-11 14:22:07,746: inference iter 261,  (0.050555s)
+INFO:niftynet:2019-02-11 14:22:07,803: inference iter 262,  (0.053600s)
+INFO:niftynet:2019-02-11 14:22:07,856: inference iter 263,  (0.049141s)
+INFO:niftynet:2019-02-11 14:22:07,911: inference iter 264,  (0.050729s)
+INFO:niftynet:2019-02-11 14:22:07,966: inference iter 265,  (0.050915s)
+INFO:niftynet:2019-02-11 14:22:09,530: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:09,531: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:09,531: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:09,897: inference iter 266,  (1.627460s)
+INFO:niftynet:2019-02-11 14:22:09,949: inference iter 267,  (0.048900s)
+INFO:niftynet:2019-02-11 14:22:10,000: inference iter 268,  (0.049093s)
+INFO:niftynet:2019-02-11 14:22:10,052: inference iter 269,  (0.048847s)
+INFO:niftynet:2019-02-11 14:22:10,103: inference iter 270,  (0.048734s)
+INFO:niftynet:2019-02-11 14:22:10,154: inference iter 271,  (0.048471s)
+INFO:niftynet:2019-02-11 14:22:10,206: inference iter 272,  (0.049508s)
+INFO:niftynet:2019-02-11 14:22:10,258: inference iter 273,  (0.049140s)
+INFO:niftynet:2019-02-11 14:22:10,311: inference iter 274,  (0.050524s)
+INFO:niftynet:2019-02-11 14:22:10,367: inference iter 275,  (0.052324s)
+INFO:niftynet:2019-02-11 14:22:10,422: inference iter 276,  (0.050437s)
+INFO:niftynet:2019-02-11 14:22:10,476: inference iter 277,  (0.050636s)
+INFO:niftynet:2019-02-11 14:22:10,531: inference iter 278,  (0.050815s)
+INFO:niftynet:2019-02-11 14:22:10,586: inference iter 279,  (0.051858s)
+INFO:niftynet:2019-02-11 14:22:12,163: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:12,163: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:12,163: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:12,525: inference iter 280,  (1.639746s)
+INFO:niftynet:2019-02-11 14:22:12,577: inference iter 281,  (0.049361s)
+INFO:niftynet:2019-02-11 14:22:12,630: inference iter 282,  (0.050114s)
+INFO:niftynet:2019-02-11 14:22:12,682: inference iter 283,  (0.049124s)
+INFO:niftynet:2019-02-11 14:22:12,736: inference iter 284,  (0.050254s)
+INFO:niftynet:2019-02-11 14:22:12,786: inference iter 285,  (0.048444s)
+INFO:niftynet:2019-02-11 14:22:12,838: inference iter 286,  (0.048970s)
+INFO:niftynet:2019-02-11 14:22:12,891: inference iter 287,  (0.050203s)
+INFO:niftynet:2019-02-11 14:22:12,943: inference iter 288,  (0.048616s)
+INFO:niftynet:2019-02-11 14:22:12,996: inference iter 289,  (0.048993s)
+INFO:niftynet:2019-02-11 14:22:13,048: inference iter 290,  (0.049388s)
+INFO:niftynet:2019-02-11 14:22:13,101: inference iter 291,  (0.049198s)
+INFO:niftynet:2019-02-11 14:22:13,155: inference iter 292,  (0.050114s)
+INFO:niftynet:2019-02-11 14:22:13,211: inference iter 293,  (0.051174s)
+INFO:niftynet:2019-02-11 14:22:14,711: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:14,711: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:14,711: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:15,059: inference iter 294,  (1.569305s)
+INFO:niftynet:2019-02-11 14:22:15,112: inference iter 295,  (0.050184s)
+INFO:niftynet:2019-02-11 14:22:15,164: inference iter 296,  (0.049103s)
+INFO:niftynet:2019-02-11 14:22:15,216: inference iter 297,  (0.049500s)
+INFO:niftynet:2019-02-11 14:22:15,268: inference iter 298,  (0.049142s)
+INFO:niftynet:2019-02-11 14:22:15,318: inference iter 299,  (0.048627s)
+INFO:niftynet:2019-02-11 14:22:15,370: inference iter 300,  (0.049526s)
+INFO:niftynet:2019-02-11 14:22:15,424: inference iter 301,  (0.051056s)
+INFO:niftynet:2019-02-11 14:22:15,475: inference iter 302,  (0.048868s)
+INFO:niftynet:2019-02-11 14:22:15,527: inference iter 303,  (0.048786s)
+INFO:niftynet:2019-02-11 14:22:15,582: inference iter 304,  (0.050442s)
+INFO:niftynet:2019-02-11 14:22:15,634: inference iter 305,  (0.049161s)
+INFO:niftynet:2019-02-11 14:22:15,690: inference iter 306,  (0.051987s)
+INFO:niftynet:2019-02-11 14:22:15,745: inference iter 307,  (0.050689s)
+INFO:niftynet:2019-02-11 14:22:17,426: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:17,426: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:17,426: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:17,817: inference iter 308,  (1.753642s)
+INFO:niftynet:2019-02-11 14:22:17,869: inference iter 309,  (0.048803s)
+INFO:niftynet:2019-02-11 14:22:17,921: inference iter 310,  (0.050166s)
+INFO:niftynet:2019-02-11 14:22:17,973: inference iter 311,  (0.048954s)
+INFO:niftynet:2019-02-11 14:22:18,026: inference iter 312,  (0.048716s)
+INFO:niftynet:2019-02-11 14:22:18,078: inference iter 313,  (0.049421s)
+INFO:niftynet:2019-02-11 14:22:18,129: inference iter 314,  (0.048948s)
+INFO:niftynet:2019-02-11 14:22:18,180: inference iter 315,  (0.048655s)
+INFO:niftynet:2019-02-11 14:22:18,235: inference iter 316,  (0.050665s)
+INFO:niftynet:2019-02-11 14:22:18,288: inference iter 317,  (0.051460s)
+INFO:niftynet:2019-02-11 14:22:18,357: inference iter 318,  (0.048996s)
+INFO:niftynet:2019-02-11 14:22:18,412: inference iter 319,  (0.051886s)
+INFO:niftynet:2019-02-11 14:22:18,466: inference iter 320,  (0.050794s)
+INFO:niftynet:2019-02-11 14:22:18,520: inference iter 321,  (0.050719s)
+INFO:niftynet:2019-02-11 14:22:20,023: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:20,023: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:20,023: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:20,399: inference iter 322,  (1.565741s)
+INFO:niftynet:2019-02-11 14:22:20,455: inference iter 323,  (0.049921s)
+INFO:niftynet:2019-02-11 14:22:20,507: inference iter 324,  (0.049382s)
+INFO:niftynet:2019-02-11 14:22:20,562: inference iter 325,  (0.050732s)
+INFO:niftynet:2019-02-11 14:22:20,616: inference iter 326,  (0.050407s)
+INFO:niftynet:2019-02-11 14:22:20,667: inference iter 327,  (0.048802s)
+INFO:niftynet:2019-02-11 14:22:20,719: inference iter 328,  (0.050010s)
+INFO:niftynet:2019-02-11 14:22:20,770: inference iter 329,  (0.048867s)
+INFO:niftynet:2019-02-11 14:22:20,821: inference iter 330,  (0.048694s)
+INFO:niftynet:2019-02-11 14:22:20,873: inference iter 331,  (0.048627s)
+INFO:niftynet:2019-02-11 14:22:20,926: inference iter 332,  (0.050054s)
+INFO:niftynet:2019-02-11 14:22:20,980: inference iter 333,  (0.051062s)
+INFO:niftynet:2019-02-11 14:22:21,033: inference iter 334,  (0.050209s)
+INFO:niftynet:2019-02-11 14:22:21,097: inference iter 335,  (0.059409s)
+INFO:niftynet:2019-02-11 14:22:22,592: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:22,592: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:22,593: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:22,926: inference iter 336,  (1.565732s)
+INFO:niftynet:2019-02-11 14:22:22,977: inference iter 337,  (0.048747s)
+INFO:niftynet:2019-02-11 14:22:23,029: inference iter 338,  (0.049421s)
+INFO:niftynet:2019-02-11 14:22:23,081: inference iter 339,  (0.049175s)
+INFO:niftynet:2019-02-11 14:22:23,133: inference iter 340,  (0.048702s)
+INFO:niftynet:2019-02-11 14:22:23,184: inference iter 341,  (0.048866s)
+INFO:niftynet:2019-02-11 14:22:23,235: inference iter 342,  (0.048498s)
+INFO:niftynet:2019-02-11 14:22:23,287: inference iter 343,  (0.048930s)
+INFO:niftynet:2019-02-11 14:22:23,339: inference iter 344,  (0.049577s)
+INFO:niftynet:2019-02-11 14:22:23,390: inference iter 345,  (0.048768s)
+INFO:niftynet:2019-02-11 14:22:23,442: inference iter 346,  (0.049106s)
+INFO:niftynet:2019-02-11 14:22:23,495: inference iter 347,  (0.049989s)
+INFO:niftynet:2019-02-11 14:22:23,549: inference iter 348,  (0.050620s)
+INFO:niftynet:2019-02-11 14:22:23,604: inference iter 349,  (0.051740s)
+INFO:niftynet:2019-02-11 14:22:25,327: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:25,327: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:25,327: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:25,696: inference iter 350,  (1.789462s)
+INFO:niftynet:2019-02-11 14:22:25,750: inference iter 351,  (0.049100s)
+INFO:niftynet:2019-02-11 14:22:25,802: inference iter 352,  (0.049030s)
+INFO:niftynet:2019-02-11 14:22:25,855: inference iter 353,  (0.050734s)
+INFO:niftynet:2019-02-11 14:22:25,909: inference iter 354,  (0.049680s)
+INFO:niftynet:2019-02-11 14:22:25,961: inference iter 355,  (0.049253s)
+INFO:niftynet:2019-02-11 14:22:26,012: inference iter 356,  (0.048578s)
+INFO:niftynet:2019-02-11 14:22:26,066: inference iter 357,  (0.051047s)
+INFO:niftynet:2019-02-11 14:22:26,117: inference iter 358,  (0.048597s)
+INFO:niftynet:2019-02-11 14:22:26,168: inference iter 359,  (0.048369s)
+INFO:niftynet:2019-02-11 14:22:26,221: inference iter 360,  (0.049162s)
+INFO:niftynet:2019-02-11 14:22:26,276: inference iter 361,  (0.051505s)
+INFO:niftynet:2019-02-11 14:22:26,342: inference iter 362,  (0.063476s)
+INFO:niftynet:2019-02-11 14:22:26,397: inference iter 363,  (0.050995s)
+INFO:niftynet:2019-02-11 14:22:28,141: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:28,142: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:28,142: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:28,506: inference iter 364,  (1.812561s)
+INFO:niftynet:2019-02-11 14:22:28,558: inference iter 365,  (0.048743s)
+INFO:niftynet:2019-02-11 14:22:28,609: inference iter 366,  (0.049001s)
+INFO:niftynet:2019-02-11 14:22:28,660: inference iter 367,  (0.048518s)
+INFO:niftynet:2019-02-11 14:22:28,713: inference iter 368,  (0.050282s)
+INFO:niftynet:2019-02-11 14:22:28,764: inference iter 369,  (0.048738s)
+INFO:niftynet:2019-02-11 14:22:28,816: inference iter 370,  (0.049639s)
+INFO:niftynet:2019-02-11 14:22:28,868: inference iter 371,  (0.049471s)
+INFO:niftynet:2019-02-11 14:22:28,919: inference iter 372,  (0.048838s)
+INFO:niftynet:2019-02-11 14:22:28,971: inference iter 373,  (0.049894s)
+INFO:niftynet:2019-02-11 14:22:29,024: inference iter 374,  (0.049861s)
+INFO:niftynet:2019-02-11 14:22:29,077: inference iter 375,  (0.050686s)
+INFO:niftynet:2019-02-11 14:22:29,131: inference iter 376,  (0.050386s)
+INFO:niftynet:2019-02-11 14:22:29,185: inference iter 377,  (0.050605s)
+INFO:niftynet:2019-02-11 14:22:30,869: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:30,869: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:30,870: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:31,220: inference iter 378,  (1.747095s)
+INFO:niftynet:2019-02-11 14:22:31,271: inference iter 379,  (0.049306s)
+INFO:niftynet:2019-02-11 14:22:31,323: inference iter 380,  (0.049194s)
+INFO:niftynet:2019-02-11 14:22:31,378: inference iter 381,  (0.051922s)
+INFO:niftynet:2019-02-11 14:22:31,432: inference iter 382,  (0.050080s)
+INFO:niftynet:2019-02-11 14:22:31,483: inference iter 383,  (0.049266s)
+INFO:niftynet:2019-02-11 14:22:31,537: inference iter 384,  (0.050903s)
+INFO:niftynet:2019-02-11 14:22:31,589: inference iter 385,  (0.049341s)
+INFO:niftynet:2019-02-11 14:22:31,641: inference iter 386,  (0.049858s)
+INFO:niftynet:2019-02-11 14:22:31,694: inference iter 387,  (0.050427s)
+INFO:niftynet:2019-02-11 14:22:31,749: inference iter 388,  (0.051407s)
+INFO:niftynet:2019-02-11 14:22:31,805: inference iter 389,  (0.052048s)
+INFO:niftynet:2019-02-11 14:22:31,860: inference iter 390,  (0.051941s)
+INFO:niftynet:2019-02-11 14:22:31,917: inference iter 391,  (0.053027s)
+INFO:niftynet:2019-02-11 14:22:33,544: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:33,544: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 14:22:33,544: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 14:22:33,923: inference iter 392,  (1.696579s)
+INFO:niftynet:2019-02-11 14:22:33,974: inference iter 393,  (0.048815s)
+INFO:niftynet:2019-02-11 14:22:34,025: inference iter 394,  (0.048394s)
+INFO:niftynet:2019-02-11 14:22:34,078: inference iter 395,  (0.049620s)
+INFO:niftynet:2019-02-11 14:22:34,132: inference iter 396,  (0.050277s)
+INFO:niftynet:2019-02-11 14:22:34,187: inference iter 397,  (0.051039s)
+INFO:niftynet:2019-02-11 14:22:34,241: inference iter 398,  (0.050162s)
+INFO:niftynet:2019-02-11 14:22:34,297: inference iter 399,  (0.051726s)
+INFO:niftynet:2019-02-11 14:22:34,352: inference iter 400,  (0.052082s)
+INFO:niftynet:2019-02-11 14:22:34,408: inference iter 401,  (0.050429s)
+INFO:niftynet:2019-02-11 14:22:34,464: inference iter 402,  (0.052675s)
+INFO:niftynet:2019-02-11 14:22:34,522: inference iter 403,  (0.053778s)
+INFO:niftynet:2019-02-11 14:22:34,576: inference iter 404,  (0.051020s)
+INFO:niftynet:2019-02-11 14:22:34,632: inference iter 405,  (0.051643s)
+INFO:niftynet:2019-02-11 14:22:35,025: inference iter 406,  (0.052963s)
+INFO:niftynet:2019-02-11 14:22:35,025: stopping -- event handler: OutputInterpreter.
+INFO:niftynet:2019-02-11 14:22:35,025: cleaning up...
+INFO:niftynet:2019-02-11 14:22:35,025: stopping sampling threads
+INFO:niftynet:2019-02-11 14:22:35,047: SegmentationApplication stopped (time in second 79.71).
+INFO:niftynet:2019-02-11 15:53:48,005: set CUDA_VISIBLE_DEVICES to 0
+INFO:niftynet:2019-02-11 15:53:48,006: set initial_iter to 615 based on checkpoints
+INFO:niftynet:2019-02-11 15:53:48,007: starting segmentation application
+INFO:niftynet:2019-02-11 15:53:48,007: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-11 15:53:48,012: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-11 15:53:48,016: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+WARNING:niftynet:2019-02-11 15:53:48,020: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-11 15:53:48,022: 
+
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T2', 'label']
+Dataset partitioning:
+-- training 227 cases (79.65%),
+-- validation 29 cases (10.18%),
+-- inference 29 cases (10.18%).
+
+INFO:niftynet:2019-02-11 15:53:49,897: Image reader: loading 29 subjects from sections ('T1', 'T2') as input [image]
+INFO:niftynet:2019-02-11 15:53:49,899: normalisation histogram reference models ready for image:('T1', 'T2')
+INFO:niftynet:2019-02-11 15:53:49,900: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-11 15:53:51,355: initialised window instance
+INFO:niftynet:2019-02-11 15:53:51,355: initialised grid sampler {'image': (1, 120, 120, 80, 1, 2), 'image_location': (1, 7)}
+WARNING:niftynet:2019-02-11 15:53:51,422: From /home/sathiesh/niftynet_brain/NiftyNet/niftynet/engine/application_initializer.py:106: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+INFO:niftynet:2019-02-11 15:53:51,423: using DenseVNet
+INFO:niftynet:2019-02-11 15:53:51,425: Initialising dataset from generator...
+INFO:niftynet:2019-02-11 15:53:53,876: Restoring parameters from /home/sathiesh/niftynet_brain/models/brats/models/model.ckpt-615
+INFO:niftynet:2019-02-11 15:53:57,641: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:53:57,641: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:53:57,641: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:53:59,210: inference iter 0,  (4.811633s)
+INFO:niftynet:2019-02-11 15:53:59,285: inference iter 1,  (0.049321s)
+INFO:niftynet:2019-02-11 15:53:59,337: inference iter 2,  (0.048757s)
+INFO:niftynet:2019-02-11 15:53:59,391: inference iter 3,  (0.051335s)
+INFO:niftynet:2019-02-11 15:53:59,446: inference iter 4,  (0.052184s)
+INFO:niftynet:2019-02-11 15:53:59,499: inference iter 5,  (0.049493s)
+INFO:niftynet:2019-02-11 15:53:59,553: inference iter 6,  (0.050544s)
+INFO:niftynet:2019-02-11 15:53:59,608: inference iter 7,  (0.051741s)
+INFO:niftynet:2019-02-11 15:53:59,660: inference iter 8,  (0.050007s)
+INFO:niftynet:2019-02-11 15:53:59,716: inference iter 9,  (0.051420s)
+INFO:niftynet:2019-02-11 15:53:59,770: inference iter 10,  (0.049760s)
+INFO:niftynet:2019-02-11 15:53:59,823: inference iter 11,  (0.049524s)
+INFO:niftynet:2019-02-11 15:53:59,875: inference iter 12,  (0.049048s)
+INFO:niftynet:2019-02-11 15:53:59,931: inference iter 13,  (0.053548s)
+INFO:niftynet:2019-02-11 15:54:00,673: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:00,673: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:00,673: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:00,733: inference iter 14,  (0.797760s)
+WARNING:niftynet:2019-02-11 15:54:00,801: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_2013_17_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:01,075: inference iter 15,  (0.050051s)
+INFO:niftynet:2019-02-11 15:54:01,128: inference iter 16,  (0.050813s)
+INFO:niftynet:2019-02-11 15:54:01,181: inference iter 17,  (0.050550s)
+INFO:niftynet:2019-02-11 15:54:01,234: inference iter 18,  (0.050140s)
+INFO:niftynet:2019-02-11 15:54:01,285: inference iter 19,  (0.048336s)
+INFO:niftynet:2019-02-11 15:54:01,335: inference iter 20,  (0.048429s)
+INFO:niftynet:2019-02-11 15:54:01,387: inference iter 21,  (0.048677s)
+INFO:niftynet:2019-02-11 15:54:01,438: inference iter 22,  (0.048274s)
+INFO:niftynet:2019-02-11 15:54:01,489: inference iter 23,  (0.048412s)
+INFO:niftynet:2019-02-11 15:54:01,541: inference iter 24,  (0.049334s)
+INFO:niftynet:2019-02-11 15:54:01,597: inference iter 25,  (0.051534s)
+INFO:niftynet:2019-02-11 15:54:01,649: inference iter 26,  (0.049896s)
+INFO:niftynet:2019-02-11 15:54:01,703: inference iter 27,  (0.051424s)
+INFO:niftynet:2019-02-11 15:54:03,308: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:03,308: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:03,308: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:03,380: inference iter 28,  (1.673599s)
+WARNING:niftynet:2019-02-11 15:54:03,444: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_2013_22_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:03,726: inference iter 29,  (0.049791s)
+INFO:niftynet:2019-02-11 15:54:03,778: inference iter 30,  (0.049357s)
+INFO:niftynet:2019-02-11 15:54:03,830: inference iter 31,  (0.049178s)
+INFO:niftynet:2019-02-11 15:54:03,886: inference iter 32,  (0.051805s)
+INFO:niftynet:2019-02-11 15:54:03,937: inference iter 33,  (0.048620s)
+INFO:niftynet:2019-02-11 15:54:03,987: inference iter 34,  (0.048249s)
+INFO:niftynet:2019-02-11 15:54:04,039: inference iter 35,  (0.048791s)
+INFO:niftynet:2019-02-11 15:54:04,090: inference iter 36,  (0.048790s)
+INFO:niftynet:2019-02-11 15:54:04,141: inference iter 37,  (0.048681s)
+INFO:niftynet:2019-02-11 15:54:04,192: inference iter 38,  (0.048267s)
+INFO:niftynet:2019-02-11 15:54:04,246: inference iter 39,  (0.051281s)
+INFO:niftynet:2019-02-11 15:54:04,299: inference iter 40,  (0.049225s)
+INFO:niftynet:2019-02-11 15:54:04,351: inference iter 41,  (0.049215s)
+INFO:niftynet:2019-02-11 15:54:05,964: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:05,964: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:05,964: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:06,029: inference iter 42,  (1.675144s)
+WARNING:niftynet:2019-02-11 15:54:06,094: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_2013_5_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:06,393: inference iter 43,  (0.048524s)
+INFO:niftynet:2019-02-11 15:54:06,444: inference iter 44,  (0.048430s)
+INFO:niftynet:2019-02-11 15:54:06,496: inference iter 45,  (0.048648s)
+INFO:niftynet:2019-02-11 15:54:06,547: inference iter 46,  (0.048545s)
+INFO:niftynet:2019-02-11 15:54:06,600: inference iter 47,  (0.048600s)
+INFO:niftynet:2019-02-11 15:54:06,650: inference iter 48,  (0.048241s)
+INFO:niftynet:2019-02-11 15:54:06,703: inference iter 49,  (0.049823s)
+INFO:niftynet:2019-02-11 15:54:06,754: inference iter 50,  (0.048768s)
+INFO:niftynet:2019-02-11 15:54:06,805: inference iter 51,  (0.048459s)
+INFO:niftynet:2019-02-11 15:54:06,857: inference iter 52,  (0.049249s)
+INFO:niftynet:2019-02-11 15:54:06,910: inference iter 53,  (0.050496s)
+INFO:niftynet:2019-02-11 15:54:06,964: inference iter 54,  (0.051879s)
+INFO:niftynet:2019-02-11 15:54:07,020: inference iter 55,  (0.052093s)
+INFO:niftynet:2019-02-11 15:54:08,778: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:08,778: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:08,782: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:08,848: inference iter 56,  (1.824459s)
+WARNING:niftynet:2019-02-11 15:54:08,912: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_AAB_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:09,183: inference iter 57,  (0.049055s)
+INFO:niftynet:2019-02-11 15:54:09,236: inference iter 58,  (0.049912s)
+INFO:niftynet:2019-02-11 15:54:09,289: inference iter 59,  (0.049650s)
+INFO:niftynet:2019-02-11 15:54:09,343: inference iter 60,  (0.050728s)
+INFO:niftynet:2019-02-11 15:54:09,394: inference iter 61,  (0.048907s)
+INFO:niftynet:2019-02-11 15:54:09,447: inference iter 62,  (0.050127s)
+INFO:niftynet:2019-02-11 15:54:09,498: inference iter 63,  (0.048854s)
+INFO:niftynet:2019-02-11 15:54:09,550: inference iter 64,  (0.049246s)
+INFO:niftynet:2019-02-11 15:54:09,602: inference iter 65,  (0.048968s)
+INFO:niftynet:2019-02-11 15:54:09,653: inference iter 66,  (0.048764s)
+INFO:niftynet:2019-02-11 15:54:09,705: inference iter 67,  (0.048781s)
+INFO:niftynet:2019-02-11 15:54:09,757: inference iter 68,  (0.049373s)
+INFO:niftynet:2019-02-11 15:54:09,810: inference iter 69,  (0.049845s)
+INFO:niftynet:2019-02-11 15:54:11,480: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:11,480: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:11,480: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:11,555: inference iter 70,  (1.741495s)
+WARNING:niftynet:2019-02-11 15:54:11,625: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_ALX_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:11,912: inference iter 71,  (0.048772s)
+INFO:niftynet:2019-02-11 15:54:11,966: inference iter 72,  (0.050626s)
+INFO:niftynet:2019-02-11 15:54:12,017: inference iter 73,  (0.048554s)
+INFO:niftynet:2019-02-11 15:54:12,068: inference iter 74,  (0.048547s)
+INFO:niftynet:2019-02-11 15:54:12,120: inference iter 75,  (0.048666s)
+INFO:niftynet:2019-02-11 15:54:12,171: inference iter 76,  (0.048756s)
+INFO:niftynet:2019-02-11 15:54:12,223: inference iter 77,  (0.048743s)
+INFO:niftynet:2019-02-11 15:54:12,279: inference iter 78,  (0.051502s)
+INFO:niftynet:2019-02-11 15:54:12,334: inference iter 79,  (0.051291s)
+INFO:niftynet:2019-02-11 15:54:12,386: inference iter 80,  (0.048783s)
+INFO:niftynet:2019-02-11 15:54:12,438: inference iter 81,  (0.048819s)
+INFO:niftynet:2019-02-11 15:54:12,501: inference iter 82,  (0.059329s)
+INFO:niftynet:2019-02-11 15:54:12,554: inference iter 83,  (0.049116s)
+INFO:niftynet:2019-02-11 15:54:14,169: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:14,169: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:14,169: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:14,239: inference iter 84,  (1.680104s)
+WARNING:niftynet:2019-02-11 15:54:14,301: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_ASY_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:14,586: inference iter 85,  (0.048413s)
+INFO:niftynet:2019-02-11 15:54:14,637: inference iter 86,  (0.048293s)
+INFO:niftynet:2019-02-11 15:54:14,688: inference iter 87,  (0.048785s)
+INFO:niftynet:2019-02-11 15:54:14,742: inference iter 88,  (0.050613s)
+INFO:niftynet:2019-02-11 15:54:14,795: inference iter 89,  (0.049597s)
+INFO:niftynet:2019-02-11 15:54:14,847: inference iter 90,  (0.049955s)
+INFO:niftynet:2019-02-11 15:54:14,899: inference iter 91,  (0.049640s)
+INFO:niftynet:2019-02-11 15:54:14,950: inference iter 92,  (0.048440s)
+INFO:niftynet:2019-02-11 15:54:15,002: inference iter 93,  (0.048898s)
+INFO:niftynet:2019-02-11 15:54:15,063: inference iter 94,  (0.059209s)
+INFO:niftynet:2019-02-11 15:54:15,117: inference iter 95,  (0.050974s)
+INFO:niftynet:2019-02-11 15:54:15,171: inference iter 96,  (0.051490s)
+INFO:niftynet:2019-02-11 15:54:15,226: inference iter 97,  (0.050406s)
+INFO:niftynet:2019-02-11 15:54:16,709: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:16,710: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:16,710: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:16,775: inference iter 98,  (1.545674s)
+WARNING:niftynet:2019-02-11 15:54:16,836: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_AVV_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:17,100: inference iter 99,  (0.048587s)
+INFO:niftynet:2019-02-11 15:54:17,155: inference iter 100,  (0.051023s)
+INFO:niftynet:2019-02-11 15:54:17,207: inference iter 101,  (0.048761s)
+INFO:niftynet:2019-02-11 15:54:17,258: inference iter 102,  (0.048735s)
+INFO:niftynet:2019-02-11 15:54:17,310: inference iter 103,  (0.048997s)
+INFO:niftynet:2019-02-11 15:54:17,364: inference iter 104,  (0.050588s)
+INFO:niftynet:2019-02-11 15:54:17,415: inference iter 105,  (0.048807s)
+INFO:niftynet:2019-02-11 15:54:17,468: inference iter 106,  (0.050460s)
+INFO:niftynet:2019-02-11 15:54:17,519: inference iter 107,  (0.048533s)
+INFO:niftynet:2019-02-11 15:54:17,569: inference iter 108,  (0.048498s)
+INFO:niftynet:2019-02-11 15:54:17,623: inference iter 109,  (0.049719s)
+INFO:niftynet:2019-02-11 15:54:17,689: inference iter 110,  (0.063408s)
+INFO:niftynet:2019-02-11 15:54:17,741: inference iter 111,  (0.049236s)
+INFO:niftynet:2019-02-11 15:54:19,420: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:19,420: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:19,420: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:19,495: inference iter 112,  (1.750667s)
+WARNING:niftynet:2019-02-11 15:54:19,567: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_AXO_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:19,840: inference iter 113,  (0.049537s)
+INFO:niftynet:2019-02-11 15:54:19,892: inference iter 114,  (0.048567s)
+INFO:niftynet:2019-02-11 15:54:19,943: inference iter 115,  (0.048932s)
+INFO:niftynet:2019-02-11 15:54:19,996: inference iter 116,  (0.050273s)
+INFO:niftynet:2019-02-11 15:54:20,048: inference iter 117,  (0.049625s)
+INFO:niftynet:2019-02-11 15:54:20,100: inference iter 118,  (0.048867s)
+INFO:niftynet:2019-02-11 15:54:20,152: inference iter 119,  (0.048877s)
+INFO:niftynet:2019-02-11 15:54:20,203: inference iter 120,  (0.048589s)
+INFO:niftynet:2019-02-11 15:54:20,254: inference iter 121,  (0.048867s)
+INFO:niftynet:2019-02-11 15:54:20,305: inference iter 122,  (0.048512s)
+INFO:niftynet:2019-02-11 15:54:20,363: inference iter 123,  (0.055052s)
+INFO:niftynet:2019-02-11 15:54:20,414: inference iter 124,  (0.049026s)
+INFO:niftynet:2019-02-11 15:54:20,468: inference iter 125,  (0.050194s)
+INFO:niftynet:2019-02-11 15:54:22,103: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:22,103: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:22,103: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:22,169: inference iter 126,  (1.697972s)
+WARNING:niftynet:2019-02-11 15:54:22,241: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_CBICA_AXW_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:22,513: inference iter 127,  (0.049014s)
+INFO:niftynet:2019-02-11 15:54:22,578: inference iter 128,  (0.063020s)
+INFO:niftynet:2019-02-11 15:54:22,633: inference iter 129,  (0.050815s)
+INFO:niftynet:2019-02-11 15:54:22,685: inference iter 130,  (0.048968s)
+INFO:niftynet:2019-02-11 15:54:22,738: inference iter 131,  (0.049750s)
+INFO:niftynet:2019-02-11 15:54:22,790: inference iter 132,  (0.048969s)
+INFO:niftynet:2019-02-11 15:54:22,842: inference iter 133,  (0.049014s)
+INFO:niftynet:2019-02-11 15:54:22,895: inference iter 134,  (0.048878s)
+INFO:niftynet:2019-02-11 15:54:22,947: inference iter 135,  (0.049015s)
+INFO:niftynet:2019-02-11 15:54:23,000: inference iter 136,  (0.049202s)
+INFO:niftynet:2019-02-11 15:54:23,053: inference iter 137,  (0.049295s)
+INFO:niftynet:2019-02-11 15:54:23,106: inference iter 138,  (0.050094s)
+INFO:niftynet:2019-02-11 15:54:23,158: inference iter 139,  (0.049140s)
+INFO:niftynet:2019-02-11 15:54:24,732: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:24,733: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:24,733: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:24,793: inference iter 140,  (1.631940s)
+WARNING:niftynet:2019-02-11 15:54:24,876: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA01_425_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:25,143: inference iter 141,  (0.048529s)
+INFO:niftynet:2019-02-11 15:54:25,195: inference iter 142,  (0.048900s)
+INFO:niftynet:2019-02-11 15:54:25,249: inference iter 143,  (0.050308s)
+INFO:niftynet:2019-02-11 15:54:25,302: inference iter 144,  (0.050128s)
+INFO:niftynet:2019-02-11 15:54:25,353: inference iter 145,  (0.048472s)
+INFO:niftynet:2019-02-11 15:54:25,404: inference iter 146,  (0.048457s)
+INFO:niftynet:2019-02-11 15:54:25,455: inference iter 147,  (0.048277s)
+INFO:niftynet:2019-02-11 15:54:25,507: inference iter 148,  (0.049788s)
+INFO:niftynet:2019-02-11 15:54:25,559: inference iter 149,  (0.050244s)
+INFO:niftynet:2019-02-11 15:54:25,624: inference iter 150,  (0.062400s)
+INFO:niftynet:2019-02-11 15:54:25,677: inference iter 151,  (0.050370s)
+INFO:niftynet:2019-02-11 15:54:25,731: inference iter 152,  (0.050481s)
+INFO:niftynet:2019-02-11 15:54:25,791: inference iter 153,  (0.055699s)
+INFO:niftynet:2019-02-11 15:54:27,377: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:27,377: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:27,377: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:27,448: inference iter 154,  (1.653426s)
+WARNING:niftynet:2019-02-11 15:54:27,522: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA02_118_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:27,796: inference iter 155,  (0.050344s)
+INFO:niftynet:2019-02-11 15:54:27,848: inference iter 156,  (0.049758s)
+INFO:niftynet:2019-02-11 15:54:27,901: inference iter 157,  (0.049759s)
+INFO:niftynet:2019-02-11 15:54:27,954: inference iter 158,  (0.049326s)
+INFO:niftynet:2019-02-11 15:54:28,005: inference iter 159,  (0.048523s)
+INFO:niftynet:2019-02-11 15:54:28,057: inference iter 160,  (0.048680s)
+INFO:niftynet:2019-02-11 15:54:28,110: inference iter 161,  (0.050514s)
+INFO:niftynet:2019-02-11 15:54:28,161: inference iter 162,  (0.048655s)
+INFO:niftynet:2019-02-11 15:54:28,213: inference iter 163,  (0.048934s)
+INFO:niftynet:2019-02-11 15:54:28,265: inference iter 164,  (0.048878s)
+INFO:niftynet:2019-02-11 15:54:28,328: inference iter 165,  (0.059170s)
+INFO:niftynet:2019-02-11 15:54:28,383: inference iter 166,  (0.050606s)
+INFO:niftynet:2019-02-11 15:54:28,436: inference iter 167,  (0.049053s)
+INFO:niftynet:2019-02-11 15:54:30,083: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:30,083: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:30,083: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:30,152: inference iter 168,  (1.712223s)
+WARNING:niftynet:2019-02-11 15:54:30,236: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA02_274_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:30,525: inference iter 169,  (0.048910s)
+INFO:niftynet:2019-02-11 15:54:30,580: inference iter 170,  (0.052417s)
+INFO:niftynet:2019-02-11 15:54:30,635: inference iter 171,  (0.051409s)
+INFO:niftynet:2019-02-11 15:54:30,687: inference iter 172,  (0.048963s)
+INFO:niftynet:2019-02-11 15:54:30,739: inference iter 173,  (0.048929s)
+INFO:niftynet:2019-02-11 15:54:30,791: inference iter 174,  (0.048909s)
+INFO:niftynet:2019-02-11 15:54:30,841: inference iter 175,  (0.048644s)
+INFO:niftynet:2019-02-11 15:54:30,893: inference iter 176,  (0.048814s)
+INFO:niftynet:2019-02-11 15:54:30,945: inference iter 177,  (0.049948s)
+INFO:niftynet:2019-02-11 15:54:31,009: inference iter 178,  (0.060714s)
+INFO:niftynet:2019-02-11 15:54:31,061: inference iter 179,  (0.049052s)
+INFO:niftynet:2019-02-11 15:54:31,117: inference iter 180,  (0.051985s)
+INFO:niftynet:2019-02-11 15:54:31,172: inference iter 181,  (0.051495s)
+INFO:niftynet:2019-02-11 15:54:32,738: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:32,738: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:32,738: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:32,816: inference iter 182,  (1.640763s)
+WARNING:niftynet:2019-02-11 15:54:32,886: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA02_471_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:33,144: inference iter 183,  (0.049016s)
+INFO:niftynet:2019-02-11 15:54:33,196: inference iter 184,  (0.048544s)
+INFO:niftynet:2019-02-11 15:54:33,254: inference iter 185,  (0.053696s)
+INFO:niftynet:2019-02-11 15:54:33,307: inference iter 186,  (0.050161s)
+INFO:niftynet:2019-02-11 15:54:33,360: inference iter 187,  (0.048747s)
+INFO:niftynet:2019-02-11 15:54:33,411: inference iter 188,  (0.048646s)
+INFO:niftynet:2019-02-11 15:54:33,463: inference iter 189,  (0.048660s)
+INFO:niftynet:2019-02-11 15:54:33,515: inference iter 190,  (0.048735s)
+INFO:niftynet:2019-02-11 15:54:33,566: inference iter 191,  (0.049071s)
+INFO:niftynet:2019-02-11 15:54:33,617: inference iter 192,  (0.048490s)
+INFO:niftynet:2019-02-11 15:54:33,670: inference iter 193,  (0.050215s)
+INFO:niftynet:2019-02-11 15:54:33,726: inference iter 194,  (0.053295s)
+INFO:niftynet:2019-02-11 15:54:33,780: inference iter 195,  (0.050308s)
+INFO:niftynet:2019-02-11 15:54:35,459: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:35,459: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:35,459: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:35,524: inference iter 196,  (1.740305s)
+WARNING:niftynet:2019-02-11 15:54:35,590: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA03_138_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:35,862: inference iter 197,  (0.050798s)
+INFO:niftynet:2019-02-11 15:54:35,914: inference iter 198,  (0.048869s)
+INFO:niftynet:2019-02-11 15:54:35,966: inference iter 199,  (0.049318s)
+INFO:niftynet:2019-02-11 15:54:36,020: inference iter 200,  (0.050546s)
+INFO:niftynet:2019-02-11 15:54:36,071: inference iter 201,  (0.048643s)
+INFO:niftynet:2019-02-11 15:54:36,122: inference iter 202,  (0.048612s)
+INFO:niftynet:2019-02-11 15:54:36,175: inference iter 203,  (0.048689s)
+INFO:niftynet:2019-02-11 15:54:36,226: inference iter 204,  (0.048475s)
+INFO:niftynet:2019-02-11 15:54:36,277: inference iter 205,  (0.048684s)
+INFO:niftynet:2019-02-11 15:54:36,330: inference iter 206,  (0.048836s)
+INFO:niftynet:2019-02-11 15:54:36,383: inference iter 207,  (0.049761s)
+INFO:niftynet:2019-02-11 15:54:36,435: inference iter 208,  (0.048779s)
+INFO:niftynet:2019-02-11 15:54:36,487: inference iter 209,  (0.048927s)
+INFO:niftynet:2019-02-11 15:54:38,009: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:38,010: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:38,010: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:38,078: inference iter 210,  (1.588101s)
+WARNING:niftynet:2019-02-11 15:54:38,131: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA03_199_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:38,387: inference iter 211,  (0.048368s)
+INFO:niftynet:2019-02-11 15:54:38,439: inference iter 212,  (0.048660s)
+INFO:niftynet:2019-02-11 15:54:38,491: inference iter 213,  (0.048916s)
+INFO:niftynet:2019-02-11 15:54:38,543: inference iter 214,  (0.049115s)
+INFO:niftynet:2019-02-11 15:54:38,595: inference iter 215,  (0.048756s)
+INFO:niftynet:2019-02-11 15:54:38,647: inference iter 216,  (0.048976s)
+INFO:niftynet:2019-02-11 15:54:38,698: inference iter 217,  (0.048720s)
+INFO:niftynet:2019-02-11 15:54:38,750: inference iter 218,  (0.048881s)
+INFO:niftynet:2019-02-11 15:54:38,804: inference iter 219,  (0.050219s)
+INFO:niftynet:2019-02-11 15:54:38,854: inference iter 220,  (0.048301s)
+INFO:niftynet:2019-02-11 15:54:38,906: inference iter 221,  (0.048878s)
+INFO:niftynet:2019-02-11 15:54:38,967: inference iter 222,  (0.057071s)
+INFO:niftynet:2019-02-11 15:54:39,021: inference iter 223,  (0.050647s)
+INFO:niftynet:2019-02-11 15:54:40,678: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:40,679: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:40,679: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:40,745: inference iter 224,  (1.721005s)
+WARNING:niftynet:2019-02-11 15:54:40,796: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA03_265_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:41,055: inference iter 225,  (0.049329s)
+INFO:niftynet:2019-02-11 15:54:41,107: inference iter 226,  (0.050026s)
+INFO:niftynet:2019-02-11 15:54:41,163: inference iter 227,  (0.052052s)
+INFO:niftynet:2019-02-11 15:54:41,218: inference iter 228,  (0.052117s)
+INFO:niftynet:2019-02-11 15:54:41,270: inference iter 229,  (0.049417s)
+INFO:niftynet:2019-02-11 15:54:41,323: inference iter 230,  (0.050102s)
+INFO:niftynet:2019-02-11 15:54:41,375: inference iter 231,  (0.049780s)
+INFO:niftynet:2019-02-11 15:54:41,426: inference iter 232,  (0.048340s)
+INFO:niftynet:2019-02-11 15:54:41,478: inference iter 233,  (0.049213s)
+INFO:niftynet:2019-02-11 15:54:41,531: inference iter 234,  (0.049567s)
+INFO:niftynet:2019-02-11 15:54:41,586: inference iter 235,  (0.051463s)
+INFO:niftynet:2019-02-11 15:54:41,642: inference iter 236,  (0.051943s)
+INFO:niftynet:2019-02-11 15:54:41,696: inference iter 237,  (0.050840s)
+INFO:niftynet:2019-02-11 15:54:43,297: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:43,297: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:43,297: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:43,361: inference iter 238,  (1.660815s)
+WARNING:niftynet:2019-02-11 15:54:43,425: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA05_277_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:43,691: inference iter 239,  (0.048746s)
+INFO:niftynet:2019-02-11 15:54:43,745: inference iter 240,  (0.051099s)
+INFO:niftynet:2019-02-11 15:54:43,797: inference iter 241,  (0.050270s)
+INFO:niftynet:2019-02-11 15:54:43,850: inference iter 242,  (0.050527s)
+INFO:niftynet:2019-02-11 15:54:43,906: inference iter 243,  (0.050165s)
+INFO:niftynet:2019-02-11 15:54:43,959: inference iter 244,  (0.050495s)
+INFO:niftynet:2019-02-11 15:54:44,010: inference iter 245,  (0.049163s)
+INFO:niftynet:2019-02-11 15:54:44,063: inference iter 246,  (0.050013s)
+INFO:niftynet:2019-02-11 15:54:44,118: inference iter 247,  (0.051701s)
+INFO:niftynet:2019-02-11 15:54:44,173: inference iter 248,  (0.050911s)
+INFO:niftynet:2019-02-11 15:54:44,229: inference iter 249,  (0.052123s)
+INFO:niftynet:2019-02-11 15:54:44,284: inference iter 250,  (0.051878s)
+INFO:niftynet:2019-02-11 15:54:44,340: inference iter 251,  (0.051899s)
+INFO:niftynet:2019-02-11 15:54:45,899: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:45,899: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:45,899: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:45,975: inference iter 252,  (1.631470s)
+WARNING:niftynet:2019-02-11 15:54:46,039: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA05_478_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:46,315: inference iter 253,  (0.049141s)
+INFO:niftynet:2019-02-11 15:54:46,366: inference iter 254,  (0.048440s)
+INFO:niftynet:2019-02-11 15:54:46,417: inference iter 255,  (0.048639s)
+INFO:niftynet:2019-02-11 15:54:46,469: inference iter 256,  (0.050330s)
+INFO:niftynet:2019-02-11 15:54:46,521: inference iter 257,  (0.048676s)
+INFO:niftynet:2019-02-11 15:54:46,573: inference iter 258,  (0.049408s)
+INFO:niftynet:2019-02-11 15:54:46,624: inference iter 259,  (0.049042s)
+INFO:niftynet:2019-02-11 15:54:46,677: inference iter 260,  (0.050329s)
+INFO:niftynet:2019-02-11 15:54:46,729: inference iter 261,  (0.049240s)
+INFO:niftynet:2019-02-11 15:54:46,781: inference iter 262,  (0.049132s)
+INFO:niftynet:2019-02-11 15:54:46,834: inference iter 263,  (0.049363s)
+INFO:niftynet:2019-02-11 15:54:46,888: inference iter 264,  (0.050222s)
+INFO:niftynet:2019-02-11 15:54:46,944: inference iter 265,  (0.051600s)
+INFO:niftynet:2019-02-11 15:54:48,608: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:48,608: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:48,608: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:48,670: inference iter 266,  (1.722100s)
+WARNING:niftynet:2019-02-11 15:54:48,748: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA06_247_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:49,024: inference iter 267,  (0.050273s)
+INFO:niftynet:2019-02-11 15:54:49,077: inference iter 268,  (0.049801s)
+INFO:niftynet:2019-02-11 15:54:49,129: inference iter 269,  (0.049055s)
+INFO:niftynet:2019-02-11 15:54:49,181: inference iter 270,  (0.048871s)
+INFO:niftynet:2019-02-11 15:54:49,232: inference iter 271,  (0.048601s)
+INFO:niftynet:2019-02-11 15:54:49,284: inference iter 272,  (0.049624s)
+INFO:niftynet:2019-02-11 15:54:49,335: inference iter 273,  (0.048835s)
+INFO:niftynet:2019-02-11 15:54:49,387: inference iter 274,  (0.049380s)
+INFO:niftynet:2019-02-11 15:54:49,437: inference iter 275,  (0.048498s)
+INFO:niftynet:2019-02-11 15:54:49,489: inference iter 276,  (0.049752s)
+INFO:niftynet:2019-02-11 15:54:49,542: inference iter 277,  (0.050166s)
+INFO:niftynet:2019-02-11 15:54:49,600: inference iter 278,  (0.051409s)
+INFO:niftynet:2019-02-11 15:54:49,660: inference iter 279,  (0.055171s)
+INFO:niftynet:2019-02-11 15:54:51,183: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:51,183: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:51,183: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:51,246: inference iter 280,  (1.581909s)
+WARNING:niftynet:2019-02-11 15:54:51,310: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA08_113_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:51,597: inference iter 281,  (0.048360s)
+INFO:niftynet:2019-02-11 15:54:51,655: inference iter 282,  (0.054983s)
+INFO:niftynet:2019-02-11 15:54:51,707: inference iter 283,  (0.048604s)
+INFO:niftynet:2019-02-11 15:54:51,760: inference iter 284,  (0.050171s)
+INFO:niftynet:2019-02-11 15:54:51,812: inference iter 285,  (0.048531s)
+INFO:niftynet:2019-02-11 15:54:51,864: inference iter 286,  (0.049618s)
+INFO:niftynet:2019-02-11 15:54:51,914: inference iter 287,  (0.048392s)
+INFO:niftynet:2019-02-11 15:54:51,965: inference iter 288,  (0.048722s)
+INFO:niftynet:2019-02-11 15:54:52,017: inference iter 289,  (0.048716s)
+INFO:niftynet:2019-02-11 15:54:52,069: inference iter 290,  (0.048875s)
+INFO:niftynet:2019-02-11 15:54:52,124: inference iter 291,  (0.050830s)
+INFO:niftynet:2019-02-11 15:54:52,178: inference iter 292,  (0.050268s)
+INFO:niftynet:2019-02-11 15:54:52,231: inference iter 293,  (0.050629s)
+INFO:niftynet:2019-02-11 15:54:53,679: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:53,679: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:53,679: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:53,746: inference iter 294,  (1.512049s)
+WARNING:niftynet:2019-02-11 15:54:53,819: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA08_162_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:54,083: inference iter 295,  (0.049110s)
+INFO:niftynet:2019-02-11 15:54:54,135: inference iter 296,  (0.048341s)
+INFO:niftynet:2019-02-11 15:54:54,186: inference iter 297,  (0.048524s)
+INFO:niftynet:2019-02-11 15:54:54,238: inference iter 298,  (0.049898s)
+INFO:niftynet:2019-02-11 15:54:54,289: inference iter 299,  (0.048710s)
+INFO:niftynet:2019-02-11 15:54:54,340: inference iter 300,  (0.048836s)
+INFO:niftynet:2019-02-11 15:54:54,394: inference iter 301,  (0.051266s)
+INFO:niftynet:2019-02-11 15:54:54,448: inference iter 302,  (0.050764s)
+INFO:niftynet:2019-02-11 15:54:54,500: inference iter 303,  (0.048867s)
+INFO:niftynet:2019-02-11 15:54:54,554: inference iter 304,  (0.050088s)
+INFO:niftynet:2019-02-11 15:54:54,608: inference iter 305,  (0.049901s)
+INFO:niftynet:2019-02-11 15:54:54,662: inference iter 306,  (0.050264s)
+INFO:niftynet:2019-02-11 15:54:54,717: inference iter 307,  (0.051690s)
+INFO:niftynet:2019-02-11 15:54:56,372: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:56,372: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:56,372: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:56,440: inference iter 308,  (1.719446s)
+WARNING:niftynet:2019-02-11 15:54:56,494: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA08_469_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:56,768: inference iter 309,  (0.048456s)
+INFO:niftynet:2019-02-11 15:54:56,819: inference iter 310,  (0.048332s)
+INFO:niftynet:2019-02-11 15:54:56,876: inference iter 311,  (0.050988s)
+INFO:niftynet:2019-02-11 15:54:56,929: inference iter 312,  (0.049392s)
+INFO:niftynet:2019-02-11 15:54:56,980: inference iter 313,  (0.048480s)
+INFO:niftynet:2019-02-11 15:54:57,033: inference iter 314,  (0.051371s)
+INFO:niftynet:2019-02-11 15:54:57,089: inference iter 315,  (0.051713s)
+INFO:niftynet:2019-02-11 15:54:57,143: inference iter 316,  (0.050491s)
+INFO:niftynet:2019-02-11 15:54:57,196: inference iter 317,  (0.050019s)
+INFO:niftynet:2019-02-11 15:54:57,250: inference iter 318,  (0.050537s)
+INFO:niftynet:2019-02-11 15:54:57,305: inference iter 319,  (0.051371s)
+INFO:niftynet:2019-02-11 15:54:57,360: inference iter 320,  (0.050485s)
+INFO:niftynet:2019-02-11 15:54:57,414: inference iter 321,  (0.050823s)
+INFO:niftynet:2019-02-11 15:54:59,189: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:59,190: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:54:59,190: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:54:59,268: inference iter 322,  (1.849756s)
+WARNING:niftynet:2019-02-11 15:54:59,365: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA09_141_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:54:59,693: inference iter 323,  (0.049644s)
+INFO:niftynet:2019-02-11 15:54:59,745: inference iter 324,  (0.049218s)
+INFO:niftynet:2019-02-11 15:54:59,799: inference iter 325,  (0.050504s)
+INFO:niftynet:2019-02-11 15:54:59,852: inference iter 326,  (0.050527s)
+INFO:niftynet:2019-02-11 15:54:59,909: inference iter 327,  (0.054104s)
+INFO:niftynet:2019-02-11 15:54:59,960: inference iter 328,  (0.048998s)
+INFO:niftynet:2019-02-11 15:55:00,011: inference iter 329,  (0.048693s)
+INFO:niftynet:2019-02-11 15:55:00,063: inference iter 330,  (0.049809s)
+INFO:niftynet:2019-02-11 15:55:00,118: inference iter 331,  (0.050571s)
+INFO:niftynet:2019-02-11 15:55:00,182: inference iter 332,  (0.060529s)
+INFO:niftynet:2019-02-11 15:55:00,237: inference iter 333,  (0.051786s)
+INFO:niftynet:2019-02-11 15:55:00,292: inference iter 334,  (0.051756s)
+INFO:niftynet:2019-02-11 15:55:00,345: inference iter 335,  (0.050899s)
+INFO:niftynet:2019-02-11 15:55:01,925: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:01,925: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:01,925: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:55:01,986: inference iter 336,  (1.636944s)
+WARNING:niftynet:2019-02-11 15:55:02,047: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA09_177_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:02,321: inference iter 337,  (0.049626s)
+INFO:niftynet:2019-02-11 15:55:02,374: inference iter 338,  (0.049269s)
+INFO:niftynet:2019-02-11 15:55:02,428: inference iter 339,  (0.049770s)
+INFO:niftynet:2019-02-11 15:55:02,482: inference iter 340,  (0.050545s)
+INFO:niftynet:2019-02-11 15:55:02,535: inference iter 341,  (0.050618s)
+INFO:niftynet:2019-02-11 15:55:02,588: inference iter 342,  (0.050322s)
+INFO:niftynet:2019-02-11 15:55:02,639: inference iter 343,  (0.048554s)
+INFO:niftynet:2019-02-11 15:55:02,690: inference iter 344,  (0.048729s)
+INFO:niftynet:2019-02-11 15:55:02,741: inference iter 345,  (0.048638s)
+INFO:niftynet:2019-02-11 15:55:02,793: inference iter 346,  (0.049248s)
+INFO:niftynet:2019-02-11 15:55:02,854: inference iter 347,  (0.058731s)
+INFO:niftynet:2019-02-11 15:55:02,908: inference iter 348,  (0.051175s)
+INFO:niftynet:2019-02-11 15:55:02,962: inference iter 349,  (0.050764s)
+INFO:niftynet:2019-02-11 15:55:04,509: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:04,510: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:04,513: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:55:04,586: inference iter 350,  (1.619711s)
+WARNING:niftynet:2019-02-11 15:55:04,643: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA09_428_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:04,897: inference iter 351,  (0.048373s)
+INFO:niftynet:2019-02-11 15:55:04,948: inference iter 352,  (0.048535s)
+INFO:niftynet:2019-02-11 15:55:05,001: inference iter 353,  (0.049798s)
+INFO:niftynet:2019-02-11 15:55:05,054: inference iter 354,  (0.049630s)
+INFO:niftynet:2019-02-11 15:55:05,105: inference iter 355,  (0.048372s)
+INFO:niftynet:2019-02-11 15:55:05,155: inference iter 356,  (0.048363s)
+INFO:niftynet:2019-02-11 15:55:05,207: inference iter 357,  (0.049318s)
+INFO:niftynet:2019-02-11 15:55:05,260: inference iter 358,  (0.049379s)
+INFO:niftynet:2019-02-11 15:55:05,313: inference iter 359,  (0.049469s)
+INFO:niftynet:2019-02-11 15:55:05,365: inference iter 360,  (0.049359s)
+INFO:niftynet:2019-02-11 15:55:05,420: inference iter 361,  (0.051563s)
+INFO:niftynet:2019-02-11 15:55:05,478: inference iter 362,  (0.053716s)
+INFO:niftynet:2019-02-11 15:55:05,531: inference iter 363,  (0.050326s)
+INFO:niftynet:2019-02-11 15:55:07,341: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:07,341: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:07,342: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:55:07,413: inference iter 364,  (1.879289s)
+WARNING:niftynet:2019-02-11 15:55:07,500: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA09_493_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:07,779: inference iter 365,  (0.048763s)
+INFO:niftynet:2019-02-11 15:55:07,830: inference iter 366,  (0.048300s)
+INFO:niftynet:2019-02-11 15:55:07,881: inference iter 367,  (0.048934s)
+INFO:niftynet:2019-02-11 15:55:07,932: inference iter 368,  (0.048493s)
+INFO:niftynet:2019-02-11 15:55:07,983: inference iter 369,  (0.048483s)
+INFO:niftynet:2019-02-11 15:55:08,034: inference iter 370,  (0.048689s)
+INFO:niftynet:2019-02-11 15:55:08,085: inference iter 371,  (0.048546s)
+INFO:niftynet:2019-02-11 15:55:08,136: inference iter 372,  (0.048720s)
+INFO:niftynet:2019-02-11 15:55:08,189: inference iter 373,  (0.050521s)
+INFO:niftynet:2019-02-11 15:55:08,240: inference iter 374,  (0.048557s)
+INFO:niftynet:2019-02-11 15:55:08,292: inference iter 375,  (0.049504s)
+INFO:niftynet:2019-02-11 15:55:08,345: inference iter 376,  (0.050244s)
+INFO:niftynet:2019-02-11 15:55:08,397: inference iter 377,  (0.050010s)
+INFO:niftynet:2019-02-11 15:55:10,000: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:10,000: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:10,000: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:55:10,062: inference iter 378,  (1.662505s)
+WARNING:niftynet:2019-02-11 15:55:10,128: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA10_202_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:10,416: inference iter 379,  (0.051164s)
+INFO:niftynet:2019-02-11 15:55:10,468: inference iter 380,  (0.048843s)
+INFO:niftynet:2019-02-11 15:55:10,528: inference iter 381,  (0.056914s)
+INFO:niftynet:2019-02-11 15:55:10,582: inference iter 382,  (0.051131s)
+INFO:niftynet:2019-02-11 15:55:10,633: inference iter 383,  (0.048753s)
+INFO:niftynet:2019-02-11 15:55:10,685: inference iter 384,  (0.050095s)
+INFO:niftynet:2019-02-11 15:55:10,737: inference iter 385,  (0.048698s)
+INFO:niftynet:2019-02-11 15:55:10,788: inference iter 386,  (0.048564s)
+INFO:niftynet:2019-02-11 15:55:10,839: inference iter 387,  (0.048542s)
+INFO:niftynet:2019-02-11 15:55:10,890: inference iter 388,  (0.048651s)
+INFO:niftynet:2019-02-11 15:55:10,942: inference iter 389,  (0.048870s)
+INFO:niftynet:2019-02-11 15:55:10,995: inference iter 390,  (0.050156s)
+INFO:niftynet:2019-02-11 15:55:11,048: inference iter 391,  (0.050615s)
+INFO:niftynet:2019-02-11 15:55:12,740: grid sampling image sizes: {'image': (240, 240, 155, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:12,740: grid sampling window sizes: {'image': (120, 120, 80, 1, 2)}
+INFO:niftynet:2019-02-11 15:55:12,740: yielding 27 locations from image, extended to 28 to be divisible by batch size 2
+INFO:niftynet:2019-02-11 15:55:12,802: inference iter 392,  (1.749091s)
+WARNING:niftynet:2019-02-11 15:55:12,904: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA12_470_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:13,188: inference iter 393,  (0.051219s)
+INFO:niftynet:2019-02-11 15:55:13,239: inference iter 394,  (0.048878s)
+INFO:niftynet:2019-02-11 15:55:13,290: inference iter 395,  (0.048599s)
+INFO:niftynet:2019-02-11 15:55:13,340: inference iter 396,  (0.048333s)
+INFO:niftynet:2019-02-11 15:55:13,392: inference iter 397,  (0.048846s)
+INFO:niftynet:2019-02-11 15:55:13,443: inference iter 398,  (0.049083s)
+INFO:niftynet:2019-02-11 15:55:13,495: inference iter 399,  (0.049973s)
+INFO:niftynet:2019-02-11 15:55:13,548: inference iter 400,  (0.051157s)
+INFO:niftynet:2019-02-11 15:55:13,601: inference iter 401,  (0.050214s)
+INFO:niftynet:2019-02-11 15:55:13,655: inference iter 402,  (0.050070s)
+INFO:niftynet:2019-02-11 15:55:13,710: inference iter 403,  (0.051687s)
+INFO:niftynet:2019-02-11 15:55:13,766: inference iter 404,  (0.052354s)
+INFO:niftynet:2019-02-11 15:55:13,823: inference iter 405,  (0.052575s)
+INFO:niftynet:2019-02-11 15:55:13,885: inference iter 406,  (0.058028s)
+WARNING:niftynet:2019-02-11 15:55:13,982: File /home/sathiesh/niftynet_brain/outputs/inference/Brats18_TCIA13_618_1_niftynet_out.nii.gz exists, overwriting the file.
+INFO:niftynet:2019-02-11 15:55:14,200: stopping -- event handler: OutputInterpreter.
+INFO:niftynet:2019-02-11 15:55:14,200: cleaning up...
+INFO:niftynet:2019-02-11 15:55:14,200: stopping sampling threads
+INFO:niftynet:2019-02-11 15:55:14,221: SegmentationApplication stopped (time in second 80.54).
