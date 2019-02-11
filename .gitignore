@@ -1,3 +1,4 @@
 #ignored folders 
 NiftyNet/
 models/brats/models/
+logs/
