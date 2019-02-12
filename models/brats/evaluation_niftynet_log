@@ -1,44 +1,111 @@
-INFO:niftynet:2019-02-11 14:23:04,175: starting segmentation application
-INFO:niftynet:2019-02-11 14:23:04,175: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
-INFO:niftynet:2019-02-11 14:23:04,181: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
-INFO:niftynet:2019-02-11 14:23:04,185: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
-INFO:niftynet:2019-02-11 14:23:04,188: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
-WARNING:niftynet:2019-02-11 14:23:04,191: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
-INFO:niftynet:2019-02-11 14:23:04,194: 
+INFO:niftynet:2019-02-12 14:44:11,219: starting segmentation application
+INFO:niftynet:2019-02-12 14:44:11,219: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-12 14:44:11,225: [T1ce] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1ce.csv, skipped filenames search
+INFO:niftynet:2019-02-12 14:44:11,229: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-12 14:44:11,232: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+INFO:niftynet:2019-02-12 14:44:11,236: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
+WARNING:niftynet:2019-02-12 14:44:11,240: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-12 14:44:11,242: 
 
-Number of subjects 285, input section names: ['subject_id', 'T1', 'T2', 'label', 'inferred']
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T1ce', 'T2', 'label', 'inferred']
 Dataset partitioning:
 -- training 227 cases (79.65%),
 -- validation 29 cases (10.18%),
 -- inference 29 cases (10.18%).
 
-INFO:niftynet:2019-02-11 14:23:05,337: Image reader: loading 29 subjects from sections ('T1', 'T2') as input [image]
-INFO:niftynet:2019-02-11 14:23:05,338: Image reader: loading 29 subjects from sections ('label',) as input [label]
-INFO:niftynet:2019-02-11 14:23:05,338: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
-INFO:niftynet:2019-02-11 14:23:05,340: normalisation histogram reference models ready for image:('T1', 'T2')
-INFO:niftynet:2019-02-11 14:23:05,340: label mapping ready for label:('label',), 4 classes
-INFO:niftynet:2019-02-11 14:23:05,340: label mapping ready for inferred:('inferred',), 4 classes
-INFO:niftynet:2019-02-11 14:29:03,455: Cleaning up...
-INFO:niftynet:2019-02-11 14:29:03,456: SegmentationApplication stopped (time in second 358.11).
-INFO:niftynet:2019-02-11 15:55:29,533: starting segmentation application
-INFO:niftynet:2019-02-11 15:55:29,534: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
-INFO:niftynet:2019-02-11 15:55:29,539: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
-INFO:niftynet:2019-02-11 15:55:29,543: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
-INFO:niftynet:2019-02-11 15:55:29,547: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
-WARNING:niftynet:2019-02-11 15:55:29,550: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
-INFO:niftynet:2019-02-11 15:55:29,553: 
+INFO:niftynet:2019-02-12 14:44:18,078: Image reader: loading 29 subjects from sections ('T1', 'T1ce', 'T2') as input [image]
+INFO:niftynet:2019-02-12 14:44:18,079: Image reader: loading 29 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-02-12 14:44:18,079: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-02-12 14:44:18,081: normalisation histogram reference models ready for image:('T1', 'T1ce', 'T2')
+INFO:niftynet:2019-02-12 14:44:18,081: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-12 14:44:18,081: label mapping ready for inferred:('inferred',), 4 classes
+INFO:niftynet:2019-02-12 14:50:26,787: Cleaning up...
+INFO:niftynet:2019-02-12 14:50:26,787: SegmentationApplication stopped (time in second 368.70).
+INFO:niftynet:2019-02-12 16:49:54,567: starting segmentation application
+INFO:niftynet:2019-02-12 16:49:54,567: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:49:54,573: [T1ce] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1ce.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:49:54,577: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:49:54,581: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:49:54,585: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
+WARNING:niftynet:2019-02-12 16:49:54,588: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-12 16:49:54,591: 
 
-Number of subjects 285, input section names: ['subject_id', 'T1', 'T2', 'label', 'inferred']
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T1ce', 'T2', 'label', 'inferred']
 Dataset partitioning:
 -- training 227 cases (79.65%),
 -- validation 29 cases (10.18%),
 -- inference 29 cases (10.18%).
 
-INFO:niftynet:2019-02-11 15:55:31,100: Image reader: loading 29 subjects from sections ('T1', 'T2') as input [image]
-INFO:niftynet:2019-02-11 15:55:31,100: Image reader: loading 29 subjects from sections ('label',) as input [label]
-INFO:niftynet:2019-02-11 15:55:31,100: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
-INFO:niftynet:2019-02-11 15:55:31,102: normalisation histogram reference models ready for image:('T1', 'T2')
-INFO:niftynet:2019-02-11 15:55:31,102: label mapping ready for label:('label',), 4 classes
-INFO:niftynet:2019-02-11 15:55:31,102: label mapping ready for inferred:('inferred',), 4 classes
-INFO:niftynet:2019-02-11 16:01:21,004: Cleaning up...
-INFO:niftynet:2019-02-11 16:01:21,004: SegmentationApplication stopped (time in second 349.90).
+INFO:niftynet:2019-02-12 16:49:56,804: Image reader: loading 29 subjects from sections ('T1', 'T1ce', 'T2') as input [image]
+INFO:niftynet:2019-02-12 16:49:56,804: Image reader: loading 29 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-02-12 16:49:56,805: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-02-12 16:49:56,806: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-12 16:49:56,806: label mapping ready for inferred:('inferred',), 4 classes
+INFO:niftynet:2019-02-12 16:55:27,249: Cleaning up...
+INFO:niftynet:2019-02-12 16:55:27,249: SegmentationApplication stopped (time in second 330.44).
+INFO:niftynet:2019-02-12 16:56:52,589: starting segmentation application
+INFO:niftynet:2019-02-12 16:56:52,590: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:56:52,596: [T1ce] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1ce.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:56:52,600: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:56:52,604: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+INFO:niftynet:2019-02-12 16:56:52,608: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
+WARNING:niftynet:2019-02-12 16:56:52,612: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-12 16:56:52,614: 
+
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T1ce', 'T2', 'label', 'inferred']
+Dataset partitioning:
+-- training 227 cases (79.65%),
+-- validation 29 cases (10.18%),
+-- inference 29 cases (10.18%).
+
+INFO:niftynet:2019-02-12 16:56:54,747: Image reader: loading 29 subjects from sections ('T1', 'T1ce', 'T2') as input [image]
+INFO:niftynet:2019-02-12 16:56:54,748: Image reader: loading 29 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-02-12 16:56:54,748: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-02-12 16:56:54,750: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-12 16:56:54,750: label mapping ready for inferred:('inferred',), 4 classes
+INFO:niftynet:2019-02-12 17:02:08,071: Cleaning up...
+INFO:niftynet:2019-02-12 17:02:08,071: SegmentationApplication stopped (time in second 313.32).
+INFO:niftynet:2019-02-12 17:51:12,824: starting segmentation application
+INFO:niftynet:2019-02-12 17:51:12,825: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-12 17:51:12,830: [T1ce] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1ce.csv, skipped filenames search
+INFO:niftynet:2019-02-12 17:51:12,834: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-12 17:51:12,838: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+INFO:niftynet:2019-02-12 17:51:12,841: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
+WARNING:niftynet:2019-02-12 17:51:12,845: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-12 17:51:12,847: 
+
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T1ce', 'T2', 'label', 'inferred']
+Dataset partitioning:
+-- training 227 cases (79.65%),
+-- validation 29 cases (10.18%),
+-- inference 29 cases (10.18%).
+
+INFO:niftynet:2019-02-12 17:51:16,311: Image reader: loading 29 subjects from sections ('T1', 'T1ce', 'T2') as input [image]
+INFO:niftynet:2019-02-12 17:51:16,311: Image reader: loading 29 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-02-12 17:51:16,311: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-02-12 17:51:16,313: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-12 17:51:16,313: label mapping ready for inferred:('inferred',), 4 classes
+INFO:niftynet:2019-02-12 17:56:25,187: Cleaning up...
+INFO:niftynet:2019-02-12 17:56:25,187: SegmentationApplication stopped (time in second 308.87).
+INFO:niftynet:2019-02-12 18:00:05,077: starting segmentation application
+INFO:niftynet:2019-02-12 18:00:05,077: [T1] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1.csv, skipped filenames search
+INFO:niftynet:2019-02-12 18:00:05,083: [T1ce] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t1ce.csv, skipped filenames search
+INFO:niftynet:2019-02-12 18:00:05,087: [T2] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/orig_t2.csv, skipped filenames search
+INFO:niftynet:2019-02-12 18:00:05,091: [label] using existing csv file /home/sathiesh/niftynet_brain/csv/brats/labels.csv, skipped filenames search
+INFO:niftynet:2019-02-12 18:00:05,095: [inferred] using existing csv file /home/sathiesh/niftynet_brain/outputs/inference/inferred.csv, skipped filenames search
+WARNING:niftynet:2019-02-12 18:00:05,099: Loading from existing partitioning file /home/sathiesh/niftynet_brain/models/brats/dataset_split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-02-12 18:00:05,101: 
+
+Number of subjects 285, input section names: ['subject_id', 'T1', 'T1ce', 'T2', 'label', 'inferred']
+Dataset partitioning:
+-- training 227 cases (79.65%),
+-- validation 29 cases (10.18%),
+-- inference 29 cases (10.18%).
+
+INFO:niftynet:2019-02-12 18:00:07,342: Image reader: loading 29 subjects from sections ('T1', 'T1ce', 'T2') as input [image]
+INFO:niftynet:2019-02-12 18:00:07,343: Image reader: loading 29 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-02-12 18:00:07,343: Image reader: loading 29 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-02-12 18:00:07,344: label mapping ready for label:('label',), 4 classes
+INFO:niftynet:2019-02-12 18:00:07,344: label mapping ready for inferred:('inferred',), 4 classes
+INFO:niftynet:2019-02-12 18:05:27,609: Cleaning up...
+INFO:niftynet:2019-02-12 18:05:27,609: SegmentationApplication stopped (time in second 320.26).
