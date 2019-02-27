@@ -1,2 +1,0 @@
-label_label-from 0 1 2 4
-label_label-to 0 1 1 1
