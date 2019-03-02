@@ -4,43 +4,25 @@ Project:  Description
 ------------
 
 Project Organization
-------------
-
-    ├── config                             <- Configuration files for different tasks. 
-    │   └── brats
-    │       └── brats.ini
-    │    
-    ├── models                  
-    │   └── brats
-    │       ├── logs  
-    │       ├── models                      <- Trained models 
-    │       ├── __init__.py  
-    │       ├── dataset_split.csv
-    │       ├── evaluation_niftynet_log
-    │       ├── inference_niftynet_log  
-    │       ├── label_mapping_whole_tumor.txt
-    │       ├── settings_evaluation.txt
-    │       ├── settings_inference.txt
-    │       ├── settings_training.txt  
-    │       └── training_niftynet_log
-    │
+-----------
+    ├── config                              <- Configuration files for different tasks. 
+    │   ├── brats
+    │   │   └── brats.ini
+    │   └── ixi
+    │       └── ixi.ini
     ├── nbs                                 <- Jupyter notebooks. 
-    │   └── brats 
-    │       ├── prepare.ipynb 
-    │       └── utils.py
+    │   ├── brats 
+    │   │   ├── dataset_split.ipynb
+    │   │   └── prepare.ipynb
+    │   └── ixi   
+    │        ├── create_patient_folders.ipynb
+    │        └── prepare.ipynb
     │
-    ├── NiftyNet                            <-  TODO .gitmodules 
-    │
-    ├── outputs <-  Segmentation result.
-    │       ├── evaluation
-    │       │    ├── eval_label.csv
-    │       │    └── eval_subject_id_label.csv 
-    │       │
-    │       └── inference
-    │
+    ├── NiftyNet                            <- .gitmodules 
     └── README.md                           <-The top-level README for developers using this project.
 --------
 ## Notebooks
-`prepare.ipynb`: description
-## Python classes 
-`utils.py`: description 
+`prepare.ipynb`: create csv files with pathname for the images 
+`dataset_split.ipynb`: modify niftynets `dataset_split.csv`. 
+`create_patient_folders.ipynb`:create folders for each study and rename the files. 
+
