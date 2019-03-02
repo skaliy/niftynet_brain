@@ -1,6 +1,6 @@
 NiftyNet_Brain
 ==============================
-Project:  Description
+Project: Looking into the value of transfer learning from IXI data to BraTS18 data (work in progress)
 ------------
 
 Project Organization
