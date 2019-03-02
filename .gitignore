@@ -1,3 +1,4 @@
 #ignored folders 
 models/brats/models/
 logs/
+.ipynb_checkpoints/
