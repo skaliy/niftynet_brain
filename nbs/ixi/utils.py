@@ -33,7 +33,6 @@ def load_nifti(fn):
     
     return rfunc, rnx, rny, rnz, data, affine
 
-
 #import bz2 for compressing the file
 def save_obj(obj, name, directory ):
     with open(f'{directory}/{name}.pkl', 'wb') as f:
