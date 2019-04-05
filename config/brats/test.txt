@@ -1,4 +1,4 @@
-('ApplyGradients/beta1_power', [])
+'ApplyGradients/beta1_power', [])
 ('ApplyGradients/beta2_power', [])
 ('HighRes3DNet/conv_0_bn_leakyrelu/bn_/HighRes3DNet/conv_0_bn_leakyrelu/bn_/moving_mean/biased', [16])
 ('HighRes3DNet/conv_0_bn_leakyrelu/bn_/HighRes3DNet/conv_0_bn_leakyrelu/bn_/moving_mean/local_step', [])
