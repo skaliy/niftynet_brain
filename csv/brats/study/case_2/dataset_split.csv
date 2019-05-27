@@ -1,6 +1,5 @@
 Brats18_2013_10_1,validation
 Brats18_2013_12_1,inference
-Brats18_2013_13_1,validation
 Brats18_2013_14_1,training
 Brats18_2013_17_1,training
 Brats18_2013_18_1,validation
@@ -9,7 +8,6 @@ Brats18_2013_21_1,inference
 Brats18_2013_22_1,validation
 Brats18_2013_23_1,validation
 Brats18_2013_25_1,validation
-Brats18_2013_26_1,validation
 Brats18_2013_27_1,inference
 Brats18_2013_2_1,validation
 Brats18_2013_3_1,validation
@@ -29,14 +27,12 @@ Brats18_CBICA_AMH_1,inference
 Brats18_CBICA_ANG_1,training
 Brats18_CBICA_ANI_1,inference
 Brats18_CBICA_ANZ_1,inference
-Brats18_CBICA_AOH_1,validation
 Brats18_CBICA_AOO_1,training
 Brats18_CBICA_AOP_1,training
 Brats18_CBICA_AOZ_1,validation
 Brats18_CBICA_APR_1,validation
 Brats18_CBICA_APY_1,training
 Brats18_CBICA_APZ_1,training
-Brats18_CBICA_AQA_1,validation
 Brats18_CBICA_AQJ_1,inference
 Brats18_CBICA_AQN_1,training
 Brats18_CBICA_AQO_1,validation
@@ -46,11 +42,8 @@ Brats18_CBICA_AQU_1,validation
 Brats18_CBICA_AQV_1,training
 Brats18_CBICA_AQY_1,inference
 Brats18_CBICA_ARF_1,inference
-Brats18_CBICA_ARZ_1,validation
 Brats18_CBICA_ASA_1,training
-Brats18_CBICA_ASE_1,validation
 Brats18_CBICA_ASG_1,inference
-Brats18_CBICA_ASH_1,validation
 Brats18_CBICA_ASK_1,inference
 Brats18_CBICA_ASO_1,validation
 Brats18_CBICA_ASU_1,validation
@@ -68,14 +61,12 @@ Brats18_CBICA_AWH_1,training
 Brats18_CBICA_AWI_1,validation
 Brats18_CBICA_AXL_1,training
 Brats18_CBICA_AXM_1,validation
-Brats18_CBICA_AXN_1,validation
 Brats18_CBICA_AXO_1,training
 Brats18_CBICA_AXQ_1,inference
 Brats18_CBICA_AXW_1,training
 Brats18_CBICA_AYA_1,inference
 Brats18_CBICA_AYI_1,inference
 Brats18_CBICA_AYU_1,inference
-Brats18_CBICA_AZD_1,validation
 Brats18_CBICA_BFP_1,validation
 Brats18_CBICA_BHB_1,inference
 Brats18_CBICA_BHK_1,training
@@ -84,7 +75,6 @@ Brats18_TCIA01_131_1,validation
 Brats18_TCIA01_147_1,training
 Brats18_TCIA01_150_1,inference
 Brats18_TCIA01_186_1,training
-Brats18_TCIA01_190_1,validation
 Brats18_TCIA01_201_1,inference
 Brats18_TCIA01_203_1,validation
 Brats18_TCIA01_221_1,training
@@ -155,3 +145,13 @@ Brats18_TCIA08_319_1,validation
 Brats18_TCIA08_406_1,inference
 Brats18_TCIA08_436_1,inference
 Brats18_TCIA08_469_1,validation
+Brats18_2013_13_1, validation
+Brats18_2013_26_1, validation
+Brats18_CBICA_AOH_1, validation
+Brats18_CBICA_AQA_1, validation
+Brats18_CBICA_ARZ_1, validation
+Brats18_CBICA_ASE_1, validation
+Brats18_CBICA_ASH_1, validation
+Brats18_CBICA_AXN_1, validation
+Brats18_CBICA_AZD_1, validation
+Brats18_TCIA01_190_1, validation
